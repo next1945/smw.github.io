@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "NYSTabViewController.h"
+#import "NYSLoginViewController.h"
+#import "NYSNewFeatureViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    [NTKChooseRootController ChooseRootController:^{
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[NYSLoginViewController alloc] init];
+    } OrtabBarVC:^{
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[NYSTabViewController alloc] init];
+    } OrNewfeatureVC:^{
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[NYSNewFeatureViewController alloc] init];
+    } withAccountKey:@"account" andTokenKey:@"token"];
     return YES;
 }
 

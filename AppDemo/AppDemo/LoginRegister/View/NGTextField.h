@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "QMHTextbox.h"
+#import "NYSTextField.h"
 
 typedef void(^ClickRightButtonBlock)(NSString *value);
 typedef void(^ClickLeftButtonBlock)(NSString *value);
 
 @interface NGTextField : UIView
-@property(strong, nonatomic) QMHTextbox *textField;
+@property(strong, nonatomic) NYSTextField *textField;
 /**
  customKeyboardType键盘类型
  1:number 2:phone 3:namePhone 4:Email null:defalut

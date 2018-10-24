@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		986B5652E38CC01D11629CA7 /* libPods-AppDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */; };
+		C8C0D5CE21806A9000A1B7F3 /* NYSTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */; };
+		C8C0D5CF21806A9000A1B7F3 /* NYSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */; };
+		C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0D5D121806B4800A1B7F3 /* NYSTextField.m */; };
 		C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1F42180223A00A2DB1F /* AppDelegate.m */; };
 		C8EEE1F82180223A00A2DB1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1F72180223A00A2DB1F /* ViewController.m */; };
 		C8EEE1FB2180223A00A2DB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EEE1F92180223A00A2DB1F /* Main.storyboard */; };
@@ -27,8 +30,6 @@
 		C8EEE2492180544800A2DB1F /* NYSNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE2482180544800A2DB1F /* NYSNewFeatureViewController.m */; };
 		C8EEE24D218054AD00A2DB1F /* NYSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE24B218054AD00A2DB1F /* NYSHomeViewController.m */; };
 		C8EEE24E218054AE00A2DB1F /* NYSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8EEE24C218054AD00A2DB1F /* NYSHomeViewController.xib */; };
-		C8EEE25E218059E800A2DB1F /* NYSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE25C218059E800A2DB1F /* NYSTabViewController.m */; };
-		C8EEE25F218059E800A2DB1F /* NYSTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8EEE25D218059E800A2DB1F /* NYSTabViewController.xib */; };
 		D22C2F885A29AB18892768F8 /* libPods-AppDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A5235D92FE45C1DEDFB6AD /* libPods-AppDemoUITests.a */; };
 		F197CCD7F3CA48F3AAAFE618 /* libPods-AppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,11 @@
 		852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5698880DFC49ABFEBB2F970 /* Pods-AppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYSTabViewController.xib; sourceTree = "<group>"; };
+		C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSTabViewController.m; sourceTree = "<group>"; };
+		C8C0D5CD21806A9000A1B7F3 /* NYSTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSTabViewController.h; sourceTree = "<group>"; };
+		C8C0D5D021806B4800A1B7F3 /* NYSTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSTextField.h; sourceTree = "<group>"; };
+		C8C0D5D121806B4800A1B7F3 /* NYSTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSTextField.m; sourceTree = "<group>"; };
 		C8EEE1F02180223A00A2DB1F /* AppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EEE1F32180223A00A2DB1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8EEE1F42180223A00A2DB1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,9 +98,6 @@
 		C8EEE24B218054AD00A2DB1F /* NYSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSHomeViewController.m; sourceTree = "<group>"; };
 		C8EEE24C218054AD00A2DB1F /* NYSHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NYSHomeViewController.xib; sourceTree = "<group>"; };
 		C8EEE250218056B500A2DB1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		C8EEE25B218059E800A2DB1F /* NYSTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSTabViewController.h; sourceTree = "<group>"; };
-		C8EEE25C218059E800A2DB1F /* NYSTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSTabViewController.m; sourceTree = "<group>"; };
-		C8EEE25D218059E800A2DB1F /* NYSTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NYSTabViewController.xib; sourceTree = "<group>"; };
 		C9D94907D354ECCEB66FA3DB /* Pods-AppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D7DD5ACFB3294F9542D24CB7 /* Pods-AppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppDemoTests/Pods-AppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +238,8 @@
 			children = (
 				C8EEE23D218050EB00A2DB1F /* NGTextField.h */,
 				C8EEE23E218050EB00A2DB1F /* NGTextField.m */,
+				C8C0D5D021806B4800A1B7F3 /* NYSTextField.h */,
+				C8C0D5D121806B4800A1B7F3 /* NYSTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,9 +273,9 @@
 		C8EEE24F2180550400A2DB1F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				C8EEE25B218059E800A2DB1F /* NYSTabViewController.h */,
-				C8EEE25C218059E800A2DB1F /* NYSTabViewController.m */,
-				C8EEE25D218059E800A2DB1F /* NYSTabViewController.xib */,
+				C8C0D5CD21806A9000A1B7F3 /* NYSTabViewController.h */,
+				C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */,
+				C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -384,7 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8EEE2032180223B00A2DB1F /* LaunchScreen.storyboard in Resources */,
-				C8EEE25F218059E800A2DB1F /* NYSTabViewController.xib in Resources */,
+				C8C0D5CE21806A9000A1B7F3 /* NYSTabViewController.xib in Resources */,
 				C8EEE22D218024A200A2DB1F /* NYSLoginViewController.xib in Resources */,
 				C8EEE23C21804B2B00A2DB1F /* NYSRegisterViewController.xib in Resources */,
 				C8EEE2002180223B00A2DB1F /* Assets.xcassets in Resources */,
@@ -528,8 +533,9 @@
 				C8EEE2062180223B00A2DB1F /* main.m in Sources */,
 				C8EEE24D218054AD00A2DB1F /* NYSHomeViewController.m in Sources */,
 				C8EEE23721804A7800A2DB1F /* NYSForgetPasswordViewController.m in Sources */,
-				C8EEE25E218059E800A2DB1F /* NYSTabViewController.m in Sources */,
+				C8C0D5CF21806A9000A1B7F3 /* NYSTabViewController.m in Sources */,
 				C8EEE23221804A5B00A2DB1F /* NYSRegisterViewController.m in Sources */,
+				C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */,
 				C8EEE2492180544800A2DB1F /* NYSNewFeatureViewController.m in Sources */,
 				C8EEE23F218050EB00A2DB1F /* NGTextField.m in Sources */,
 				C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */,
@@ -705,11 +711,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9J739W8Y4;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AppDemo/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/JPush\"",
+					"\"${PODS_ROOT}/Headers/Public/KMNavigationBarTransition\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/NYSTK\"",
+					"\"${PODS_ROOT}/Headers/Public/RongCloudIM\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCCommonLog\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCShare\"",
+					"\"${PODS_ROOT}/Headers/Public/WXWaveView\"",
+					"\"${PODS_ROOT}/Headers/Public/XLForm\"",
+				);
 				INFOPLIST_FILE = AppDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,6 +743,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NiYongsheng.AppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -726,11 +753,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F9J739W8Y4;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AppDemo/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/JPush\"",
+					"\"${PODS_ROOT}/Headers/Public/KMNavigationBarTransition\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/NYSTK\"",
+					"\"${PODS_ROOT}/Headers/Public/RongCloudIM\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCCommonLog\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCShare\"",
+					"\"${PODS_ROOT}/Headers/Public/WXWaveView\"",
+					"\"${PODS_ROOT}/Headers/Public/XLForm\"",
+				);
 				INFOPLIST_FILE = AppDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -738,6 +785,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NiYongsheng.AppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

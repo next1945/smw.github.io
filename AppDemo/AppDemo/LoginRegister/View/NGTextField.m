@@ -7,8 +7,7 @@
 //
 
 #import "NGTextField.h"
-#import "NSString+isNil.h"
-
+//#import <NYSTK/NSString+NTK.h>
 
 static NSString *textFieldChangeKey = @"textFieldChangeKey";
 
@@ -19,12 +18,12 @@ static NSString *textFieldChangeKey = @"textFieldChangeKey";
 
 @implementation NGTextField
 
-- (instancetype)initWithFrame:(CGRect)frame{
+- (instancetype)initWithFrame:(CGRect)frame {
     
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.textField = [[QMHTextbox alloc] initWithFrame:self.bounds];
+        self.textField = [[NYSTextField alloc] initWithFrame:self.bounds];
         self.textField.borderStyle = UITextBorderStyleRoundedRect;
         self.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
         self.textField.clearButtonMode = UITextFieldViewModeAlways;
@@ -343,22 +342,22 @@ static NSString *textFieldChangeKey = @"textFieldChangeKey";
     
     self.limitNumber = (self.limitNumber == 0) ? MAXFLOAT : self.limitNumber;
     
-    if ([NSString isBlankString:self.inputStringType] && textField.text.length < self.limitNumber) {
+    if (![self.inputStringType isNotBlank] && textField.text.length < self.limitNumber) {
         NSString *textString = [textField.text stringByAppendingString:string];
         if (textString.length <= self.limitNumber) {
             return YES;
-        }else{
+        } else {
             textField.text = [textString substringToIndex:self.limitNumber];
             [self hx_shakeAnimation];
             return NO;
         }
     }
-    if ([NSString isBlankString:self.inputStringType]) {
-        ///获取输入法
+    if (![self.inputStringType isNotBlank]) {
+        // 获取输入法
         NSString *lang = textField.textInputMode.primaryLanguage;
         if ([lang isEqualToString:@"zh-Hans"]) {
-            //这个range就是指输入的拼音还没有转换成中文时的range
-            //如果没有就表示已经转成中文了(存在就表示没有转换成中文)
+            // 这个range就是指输入的拼音还没有转换成中文时的range
+            // 如果没有就表示已经转成中文了(存在就表示没有转换成中文)
             UITextRange *selectedRange = [textField markedTextRange];
             if (selectedRange || [string isEqualToString:@""]){
                 if (textField.text.length > self.limitNumber && ![string isEqualToString:@""]) {
@@ -383,8 +382,9 @@ static NSString *textFieldChangeKey = @"textFieldChangeKey";
         }
     } else {
         NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:self.inputStringType] invertedSet];
-        //按cs分离出数组,数组按@""分离出字符串
+        // 按cs分离出数组,数组按@""分离出字符串
         NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+        
         BOOL canChange     = [string isEqualToString:filtered];
         
         if ((canChange && textField.text.length < self.limitNumber) || [string length] == 0) {
