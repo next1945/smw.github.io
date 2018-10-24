@@ -1,0 +1,1 @@
+../../../../NYSTK/Frameworks/NYSTK.framework/Headers/HelperUtil.h

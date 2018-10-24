@@ -1,0 +1,1 @@
+../../../../NYSTK/Frameworks/NYSTK.framework/Headers/NYSTK.h

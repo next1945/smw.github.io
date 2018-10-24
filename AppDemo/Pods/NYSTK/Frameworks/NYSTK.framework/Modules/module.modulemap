@@ -1,0 +1,6 @@
+framework module NYSTK {
+  umbrella header "NYSTK.h"
+
+  export *
+  module * { export * }
+}

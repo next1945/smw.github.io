@@ -1,0 +1,118 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - JCore (1.2.5)
+  - JPush (3.1.0):
+    - JCore (~> 1.2.0)
+  - KMNavigationBarTransition (1.1.5)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - MJRefresh (3.1.15.7)
+  - NYSTK (0.0.2)
+  - RongCloudIM (2.9.7):
+    - RongCloudIM/IMKit (= 2.9.7)
+    - RongCloudIM/IMLib (= 2.9.7)
+    - RongCloudIM/RedPacket (= 2.9.7)
+    - RongCloudIM/RongSticker (= 2.9.7)
+    - RongCloudIM/Sight (= 2.9.7)
+  - RongCloudIM/IMKit (2.9.7):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.9.7)
+  - RongCloudIM/RedPacket (2.9.7):
+    - RongCloudIM/IMKit
+  - RongCloudIM/RongSticker (2.9.7):
+    - RongCloudIM/IMKit
+  - RongCloudIM/Sight (2.9.7):
+    - RongCloudIM/IMLib
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SVProgressHUD (2.2.5)
+  - UMCCommon (1.5.2)
+  - UMCCommonLog (1.0.0)
+  - UMCShare/Core (6.9.4):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/UI (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - WXWaveView (1.0.1)
+  - XLForm (3.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - JPush (= 3.1.0)
+  - KMNavigationBarTransition
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - NYSTK (~> 0.0.2)
+  - RongCloudIM
+  - SDWebImage
+  - SVProgressHUD
+  - UMCCommon
+  - UMCCommonLog
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedWeChat
+  - UMCShare/UI
+  - WXWaveView (~> 1.0)
+  - XLForm (~> 3.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - JCore
+    - JPush
+    - KMNavigationBarTransition
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - NYSTK
+    - RongCloudIM
+    - SDWebImage
+    - SVProgressHUD
+    - UMCCommon
+    - UMCCommonLog
+    - UMCShare
+    - WXWaveView
+    - XLForm
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  JCore: 14706de2640b25fb77dbd02332696491407f37c9
+  JPush: 5921e25ad13e0386351079217b009f2039084eac
+  KMNavigationBarTransition: 7a52c9bc25b39b6e3343e980b453facee1591b82
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  NYSTK: 81808935eb9c827a07433ce0720a6624ab5997f8
+  RongCloudIM: 0a039a658fe5e40f62d8f2a14c3df3629c12526a
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
+  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
+  WXWaveView: f8424284812536a3842bc5dd9afb943e53e911a8
+  XLForm: 2250b4e96ab8ffa5f3355838c79edd90de451782
+
+PODFILE CHECKSUM: 997ee87372d34c606c4c2f808897a0833a1e0837
+
+COCOAPODS: 1.5.2

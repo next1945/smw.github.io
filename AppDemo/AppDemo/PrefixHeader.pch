@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  AppDemo
+//
+//  Created by 倪刚 on 2018/10/24.
+//  Copyright © 2018 NiYongsheng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 微信登录
+#define WXAPPID @"wxa1ef79a68ee78dc6"
+#define APPSECRET @"df13989d289c27b9703ec65ef8d519db"
+// QQ登录
+#define QQAPPID @"1106681033"
+#define QQAPPKEY @"PTC8VnALh7zKAqKe"
+// 支付宝支付
+#define AlipayAPPID @"2018061960416551"
+// 极光推送
+#define JPUSH_APPKEY @"dbbe5990f07ed34325e34566"
+#define JPUSH_CHANNEl @"App Store"
+// 融云AppKey
+#define RCAPPKEY @"n19jmcy5n8fz9"
+// 友盟AppKey
+#define UMAPPKEY @"5ba4af8fb465f5d22d000095"
+
+// 1.包含UIimage分类（文件名拼接、自由拉伸）
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <SDImageCache.h>
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <Masonry.h>
+
+// 2.屏幕尺寸
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 3.获得RGB颜色
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0]
+
+// 4.获取导航栏高度
+#define getRectNavHight \
+({\
+CGRect rectNav = self.navigationController.navigationBar.frame;\
+(rectNav.size.height);\
+})\
+// 5.获取状态栏的高度
+#define getRectStatusHight \
+({\
+CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];\
+( rectStatus.size.height);\
+})\
+
+#endif /* PrefixHeader_pch */
