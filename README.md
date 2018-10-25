@@ -54,8 +54,8 @@ RMOV | CI | CI
 -->
 ## Remind
 - [x] ARC
-- [x] iOS >= 8.0
-- [x] iPhone \ iPad screen anyway
+- [x] iOS >= 10.0
+- [x] iPhone \ iPad
 
 ## Contribution
 Reward[:lollipop:](+8618853936112)  Encourage[:heart:](https://github.com/niyongsheng/AppDemo/stargazers)
