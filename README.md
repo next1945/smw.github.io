@@ -1,45 +1,46 @@
 ![(logo)](https://github.com/niyongsheng/NYSTK/blob/master/toolBox.png?raw=true)
-moeeerAppDe
+AppDemo
 ===
 [![](https://img.shields.io/badge/platform-iOS-orange.svg)](https://developer.apple.com/ios/)
 [![](http://img.shields.io/travis/CocoaPods/CocoaPods/master.svg?style=flat)](https://travis-ci.org/CocoaPods/NYSMC)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/niyongsheng/NYSMC/blob/master/LICENSE)
 ===
-* 工具类。
-* NYSToolKit is toolbox framework.
+* 快速创建一个App。
+* Quickly Create An Application.
 
 ## <a id="How_to_use:"></a>How to use:
 * Installation with CocoaPods：`pod 'NYSTK','~>0.0.1'`
 * Manual import：
-    * Drag Allddd files in the `NYSMC` folder to project
+    * Drag All files in the `NYSMC` folder to project
     * Import the main file：`#import <NYSTK/NYSTK.h>`
 
-## <a id="Application_Instance_by_NYSTK:"></a>Application Instance by NYSTK:
+## <a id="Application_Instance:"></a>Application Instance:
 RMOV | CI | CI
 ------------ | ------------- | -------------
 <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50"> | <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50"> | <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50">
 
-## <a id="Category_API:"></a>Category API:
-* [NSString+NTK.h](Frameworks/NYSTK.framework/Headers/NSString+NTK.h)
-* [NSData+NTK.h](Frameworks/NYSTK.framework/Headers/NSData+NTK.h)
-* [NSDate+NTK.h](Frameworks/NYSTK.framework/Headers/NSDate+NTK.h)
-* [NSNumber+NTK.h](Frameworks/NYSTK.framework/Headers/NSNumber+NTK.h)
-* [UIButton+NTK.h](Frameworks/NYSTK.framework/Headers/UIButton+NTK.h)
-* [UIImage+NTK.h](Frameworks/NYSTK.framework/Headers/UIImage+NTK.h)
-* [UIDevice+NTK.h](Frameworks/NYSTK.framework/Headers/UIDevice+NTK.h)
-* [UIView+NTKKeyBoardOffset.h](Frameworks/NYSTK.framework/Headers/UIView+NTKKeyBoardOffset.h)
-* [NSCharacterSet+NTK.h](Frameworks/NYSTK.framework/Headers/NSCharacterSet+NTK.h)
-* [UIBarButtonItem+NTK.h](Frameworks/NYSTK.framework/Headers/UIBarButtonItem+NTK.h)
-* [UIScrollView+NTK.h](Frameworks/NYSTK.framework/Headers/UIScrollView+NTK.h)
-* [UIViewController+NTK.h](Frameworks/NYSTK.framework/Headers/UIViewController+NTK.h)
-* [UINavigationController+NTK.h](Frameworks/NYSTK.framework/Headers/UINavigationController+NTK.h)
+## <a id="Config_Your_App:"></a>Config Your App:
+```shell
+// 微信登录
+#define WXAPPID @"wxa1ef79a68ee78dc6"
+#define APPSECRET @"df13989d289c27b9703ec65ef8d519db"
+// QQ登录
+#define QQAPPID @"1106681033"
+#define QQAPPKEY @"PTC8VnALh7zKAqKe"
+// 支付宝支付
+#define AlipayAPPID @"2018061960416551"
+// 极光推送
+#define JPUSH_APPKEY @"dbbe5990f07ed34325e34566"
+#define JPUSH_CHANNEl @"App Store"
+#define isProdution 1
+// 融云AppKey
+#define RCAPPKEY @"n19jmcy5n8fz9"
+// 友盟AppKey
+#define UMAPPKEY @"5ba4af8fb465f5d22d000095"
+```
 
-## <a id="Tool_API:"></a>Tool API:
-* [Single.h](Frameworks/NYSTK.framework/Headers/Single.h)
-* [HelperUtil.h](Frameworks/NYSTK.framework/Headers/HelperUtil.h)
-* [NTKFileManager.h](Frameworks/NYSTK.framework/Headers/NTKFileManager.h)
-* [NTKLocalPushCenter.h](Frameworks/NYSTK.framework/Headers/NTKLocalPushCenter.h)
-* [NTKChooseRootController.h](Frameworks/NYSTK.framework/Headers/NTKChooseRootController.h)
+## <a id="Auto_Fill_Password:"></a>Auto Fill Password:
+* Auto Fill Password
 
 <!--
 * Step 1.Add Shell
@@ -57,7 +58,7 @@ RMOV | CI | CI
 - [x] iPhone \ iPad screen anyway
 
 ## Contribution
-Reward[:lollipop:](+8618853936112)  Encourage[:heart:](https://github.com/niyongsheng/NYSTK/stargazers)
+Reward[:lollipop:](+8618853936112)  Encourage[:heart:](https://github.com/niyongsheng/AppDemo/stargazers)
 
 ## Contact Me [:octocat:](https://niyongsheng.github.io)
 * E-mail: niyongsheng@Outlook.com
