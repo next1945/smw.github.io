@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,45 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lyl-Tg-0Kb">
+                                <rect key="frame" x="137.5" y="263.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lyl-Tg-0Kb" secondAttribute="height" multiplier="1:1" id="50H-17-7wd"/>
+                                    <constraint firstAttribute="width" constant="100" id="IQQ-H8-eYR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2018 NiYongsheng.All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boh-7n-6lV">
+                                <rect key="frame" x="0.0" y="632" width="375" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EPM-vK-J1o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="0.74895310401916504" green="0.74906224012374878" blue="0.74892920255661011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppDemo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-Dw-BbL">
+                                <rect key="frame" x="0.0" y="363.5" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7Wz-pu-maU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <color key="textColor" red="0.74895310401916504" green="0.74906224012374878" blue="0.74892920255661011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="boh-7n-6lV" secondAttribute="bottom" constant="10" id="5iA-Xv-eBa"/>
+                            <constraint firstAttribute="trailing" secondItem="yW5-Dw-BbL" secondAttribute="trailing" id="GaV-D8-Ja0"/>
+                            <constraint firstItem="yW5-Dw-BbL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IIf-h4-2I8"/>
+                            <constraint firstItem="boh-7n-6lV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ISr-e2-5lj"/>
+                            <constraint firstItem="lyl-Tg-0Kb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-20" id="Zjx-9W-cnZ"/>
+                            <constraint firstItem="yW5-Dw-BbL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="kgT-eE-1kT"/>
+                            <constraint firstAttribute="trailing" secondItem="boh-7n-6lV" secondAttribute="trailing" id="nCi-ug-kp2"/>
+                            <constraint firstItem="yW5-Dw-BbL" firstAttribute="top" secondItem="lyl-Tg-0Kb" secondAttribute="bottom" id="tke-vq-Hgs"/>
+                            <constraint firstItem="lyl-Tg-0Kb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uQu-6C-tLq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +64,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="128" height="128"/>
+    </resources>
 </document>

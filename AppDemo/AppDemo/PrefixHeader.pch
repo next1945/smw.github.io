@@ -9,6 +9,10 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#define POSTURL @"http://103.238.225.222:8080/api"
+#define APPID @"1438587731"
+#define AppStoreURL @"https://itunes.apple.com/cn/app/id1438587731"
+
 // 微信登录
 #define WXAPPID @"wxa1ef79a68ee78dc6"
 #define APPSECRET @"df13989d289c27b9703ec65ef8d519db"
@@ -20,10 +24,18 @@
 // 极光推送
 #define JPUSH_APPKEY @"dbbe5990f07ed34325e34566"
 #define JPUSH_CHANNEl @"App Store"
+#define isProdution 1
 // 融云AppKey
 #define RCAPPKEY @"n19jmcy5n8fz9"
 // 友盟AppKey
 #define UMAPPKEY @"5ba4af8fb465f5d22d000095"
+
+// cell行间距
+#define CellSpacing 15
+// cell圆角
+#define CellRadius 15
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 // 1.包含UIimage分类（文件名拼接、自由拉伸）
 #import <MJRefresh.h>

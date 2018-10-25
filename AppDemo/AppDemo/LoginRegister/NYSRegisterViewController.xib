@@ -10,8 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NYSLoginViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NYSRegisterViewController">
             <connections>
+                <outlet property="close" destination="uEq-Ri-c8D" id="UWh-8Y-DS7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -72,7 +73,9 @@
                             <rect key="frame" x="8" y="115.5" width="259" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password">
+                                <passwordRules key="passwordRules" passwordRulesDescriptor="required: lower; required: upper; required: digit; required: [-]; minlength: 20;"/>
+                            </textInputTraits>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,10 +103,23 @@
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                     <state key="normal" title="Register"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEq-Ri-c8D">
+                    <rect key="frame" x="335" y="30" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.74895310400000004" green="0.7490622401" blue="0.74892920259999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="uEq-Ri-c8D" secondAttribute="height" multiplier="1:1" id="Rxe-BO-mcB"/>
+                        <constraint firstAttribute="width" constant="30" id="et9-T8-guB"/>
+                    </constraints>
+                    <state key="normal" image="close"/>
+                    <connections>
+                        <action selector="closeBtnClicked:" destination="-1" eventType="touchUpInside" id="fxc-10-Seb"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="liO-37-f31" firstAttribute="centerX" secondItem="7B7-ID-Fnr" secondAttribute="centerX" id="3Jl-CW-ntH"/>
+                <constraint firstItem="uEq-Ri-c8D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="8dB-v5-6p4"/>
                 <constraint firstItem="7B7-ID-Fnr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BPn-on-mEW"/>
                 <constraint firstItem="3F1-Rq-HsT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="NKF-mY-6Gg"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7B7-ID-Fnr" secondAttribute="trailing" constant="50" id="dfI-VD-Lfm"/>
@@ -111,9 +127,13 @@
                 <constraint firstItem="7B7-ID-Fnr" firstAttribute="top" secondItem="3F1-Rq-HsT" secondAttribute="bottom" constant="20" id="jhp-BW-Uog"/>
                 <constraint firstItem="7B7-ID-Fnr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="mLT-MK-Fnk"/>
                 <constraint firstItem="7B7-ID-Fnr" firstAttribute="leading" secondItem="3F1-Rq-HsT" secondAttribute="leading" id="svE-SF-Yr9"/>
+                <constraint firstAttribute="trailing" secondItem="uEq-Ri-c8D" secondAttribute="trailing" constant="10" id="woT-SC-7hi"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="132" y="154.27286356821591"/>
         </view>
     </objects>
+    <resources>
+        <image name="close" width="12" height="12"/>
+    </resources>
 </document>

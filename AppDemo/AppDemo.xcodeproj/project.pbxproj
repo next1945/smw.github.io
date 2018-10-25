@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		986B5652E38CC01D11629CA7 /* libPods-AppDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */; };
+		C8B990DC21814FB000545181 /* NYSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990D921814FAF00545181 /* NYSMeViewController.m */; };
+		C8B990DD21814FB000545181 /* NYSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990DA21814FAF00545181 /* NYSMeViewController.xib */; };
+		C8B990E4218154AD00545181 /* NYSMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990E1218154AD00545181 /* NYSMeTableViewCell.xib */; };
+		C8B990E5218154AD00545181 /* NYSMeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990E2218154AD00545181 /* NYSMeTableViewCell.m */; };
+		C8B990E9218154BC00545181 /* NYSMeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990E6218154BC00545181 /* NYSMeModel.m */; };
+		C8B990EA218154BC00545181 /* me.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8B990E7218154BC00545181 /* me.plist */; };
+		C8B990EE21815FAF00545181 /* NYSConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990EC21815FAF00545181 /* NYSConversationViewController.m */; };
+		C8B990EF21815FAF00545181 /* NYSConversationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990ED21815FAF00545181 /* NYSConversationViewController.xib */; };
+		C8B990F32181733A00545181 /* QMHCommitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990F02181733900545181 /* QMHCommitView.xib */; };
+		C8B990F42181733A00545181 /* QMHCommitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990F22181733A00545181 /* QMHCommitView.m */; };
+		C8B990F92181748900545181 /* NYSChatDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990F82181748900545181 /* NYSChatDataSource.m */; };
+		C8B990FE2181812800545181 /* NYSAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990FC2181812800545181 /* NYSAboutViewController.m */; };
+		C8B991012181813F00545181 /* NYSAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B991002181813F00545181 /* NYSAboutViewController.xib */; };
+		C8B991042181828000545181 /* NYSUserProtoclViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B991032181828000545181 /* NYSUserProtoclViewController.m */; };
+		C8B991062181858B00545181 /* UserPrivacyAgreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8B991052181858A00545181 /* UserPrivacyAgreement.pdf */; };
+		C8B9910C21819B4E00545181 /* NYSTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B9910B21819B4E00545181 /* NYSTabbar.m */; };
+		C8B991112181BF4A00545181 /* NYSWeChatUserinfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B991102181BF4A00545181 /* NYSWeChatUserinfoModel.m */; };
+		C8B991142181BF5D00545181 /* NYSQQUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B991132181BF5D00545181 /* NYSQQUserInfoModel.m */; };
+		C8B991192181C3CA00545181 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B991182181C3CA00545181 /* HealthKit.framework */; };
 		C8C0D5CE21806A9000A1B7F3 /* NYSTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */; };
 		C8C0D5CF21806A9000A1B7F3 /* NYSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */; };
 		C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0D5D121806B4800A1B7F3 /* NYSTextField.m */; };
@@ -59,6 +78,37 @@
 		852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5698880DFC49ABFEBB2F970 /* Pods-AppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B990D921814FAF00545181 /* NYSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSMeViewController.m; sourceTree = "<group>"; };
+		C8B990DA21814FAF00545181 /* NYSMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYSMeViewController.xib; sourceTree = "<group>"; };
+		C8B990DB21814FAF00545181 /* NYSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSMeViewController.h; sourceTree = "<group>"; };
+		C8B990E1218154AD00545181 /* NYSMeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYSMeTableViewCell.xib; sourceTree = "<group>"; };
+		C8B990E2218154AD00545181 /* NYSMeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSMeTableViewCell.m; sourceTree = "<group>"; };
+		C8B990E3218154AD00545181 /* NYSMeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSMeTableViewCell.h; sourceTree = "<group>"; };
+		C8B990E6218154BC00545181 /* NYSMeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSMeModel.m; sourceTree = "<group>"; };
+		C8B990E7218154BC00545181 /* me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = me.plist; sourceTree = "<group>"; };
+		C8B990E8218154BC00545181 /* NYSMeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSMeModel.h; sourceTree = "<group>"; };
+		C8B990EB21815FAF00545181 /* NYSConversationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSConversationViewController.h; sourceTree = "<group>"; };
+		C8B990EC21815FAF00545181 /* NYSConversationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSConversationViewController.m; sourceTree = "<group>"; };
+		C8B990ED21815FAF00545181 /* NYSConversationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NYSConversationViewController.xib; sourceTree = "<group>"; };
+		C8B990F02181733900545181 /* QMHCommitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QMHCommitView.xib; sourceTree = "<group>"; };
+		C8B990F12181733900545181 /* QMHCommitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMHCommitView.h; sourceTree = "<group>"; };
+		C8B990F22181733A00545181 /* QMHCommitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMHCommitView.m; sourceTree = "<group>"; };
+		C8B990F72181748900545181 /* NYSChatDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSChatDataSource.h; sourceTree = "<group>"; };
+		C8B990F82181748900545181 /* NYSChatDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSChatDataSource.m; sourceTree = "<group>"; };
+		C8B990FB2181812800545181 /* NYSAboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSAboutViewController.h; sourceTree = "<group>"; };
+		C8B990FC2181812800545181 /* NYSAboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSAboutViewController.m; sourceTree = "<group>"; };
+		C8B991002181813F00545181 /* NYSAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYSAboutViewController.xib; sourceTree = "<group>"; };
+		C8B991022181828000545181 /* NYSUserProtoclViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSUserProtoclViewController.h; sourceTree = "<group>"; };
+		C8B991032181828000545181 /* NYSUserProtoclViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSUserProtoclViewController.m; sourceTree = "<group>"; };
+		C8B991052181858A00545181 /* UserPrivacyAgreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = UserPrivacyAgreement.pdf; sourceTree = "<group>"; };
+		C8B9910A21819B4E00545181 /* NYSTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSTabbar.h; sourceTree = "<group>"; };
+		C8B9910B21819B4E00545181 /* NYSTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSTabbar.m; sourceTree = "<group>"; };
+		C8B9910F2181BF4A00545181 /* NYSWeChatUserinfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSWeChatUserinfoModel.h; sourceTree = "<group>"; };
+		C8B991102181BF4A00545181 /* NYSWeChatUserinfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSWeChatUserinfoModel.m; sourceTree = "<group>"; };
+		C8B991122181BF5D00545181 /* NYSQQUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSQQUserInfoModel.h; sourceTree = "<group>"; };
+		C8B991132181BF5D00545181 /* NYSQQUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSQQUserInfoModel.m; sourceTree = "<group>"; };
+		C8B991152181C2AB00545181 /* AppDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppDemo.entitlements; sourceTree = "<group>"; };
+		C8B991182181C3CA00545181 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYSTabViewController.xib; sourceTree = "<group>"; };
 		C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSTabViewController.m; sourceTree = "<group>"; };
 		C8C0D5CD21806A9000A1B7F3 /* NYSTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSTabViewController.h; sourceTree = "<group>"; };
@@ -108,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F197CCD7F3CA48F3AAAFE618 /* libPods-AppDemo.a in Frameworks */,
+				C8B991192181C3CA00545181 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +184,7 @@
 		3FB15F5D3E6FB0B125D34D3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8B991182181C3CA00545181 /* HealthKit.framework */,
 				88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */,
 				852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */,
 				66A5235D92FE45C1DEDFB6AD /* libPods-AppDemoUITests.a */,
@@ -151,6 +203,88 @@
 				0BB59A33D41BB96C566A6B84 /* Pods-AppDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8B990DE2181542D00545181 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8B990DB21814FAF00545181 /* NYSMeViewController.h */,
+				C8B990D921814FAF00545181 /* NYSMeViewController.m */,
+				C8B990DA21814FAF00545181 /* NYSMeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8B990DF2181544700545181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8B990E7218154BC00545181 /* me.plist */,
+				C8B990E8218154BC00545181 /* NYSMeModel.h */,
+				C8B990E6218154BC00545181 /* NYSMeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8B990E02181544F00545181 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8B990E3218154AD00545181 /* NYSMeTableViewCell.h */,
+				C8B990E2218154AD00545181 /* NYSMeTableViewCell.m */,
+				C8B990E1218154AD00545181 /* NYSMeTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8B990F52181733F00545181 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C8B990F12181733900545181 /* QMHCommitView.h */,
+				C8B990F22181733A00545181 /* QMHCommitView.m */,
+				C8B990F02181733900545181 /* QMHCommitView.xib */,
+				C8B9910A21819B4E00545181 /* NYSTabbar.h */,
+				C8B9910B21819B4E00545181 /* NYSTabbar.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C8B990F62181746800545181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8B990F72181748900545181 /* NYSChatDataSource.h */,
+				C8B990F82181748900545181 /* NYSChatDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8B990FA21817EEA00545181 /* 关于 */ = {
+			isa = PBXGroup;
+			children = (
+				C8B991052181858A00545181 /* UserPrivacyAgreement.pdf */,
+				C8B990FB2181812800545181 /* NYSAboutViewController.h */,
+				C8B990FC2181812800545181 /* NYSAboutViewController.m */,
+				C8B991002181813F00545181 /* NYSAboutViewController.xib */,
+				C8B991022181828000545181 /* NYSUserProtoclViewController.h */,
+				C8B991032181828000545181 /* NYSUserProtoclViewController.m */,
+			);
+			path = "关于";
+			sourceTree = "<group>";
+		};
+		C8B9910D2181BEFB00545181 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C8B9910E2181BF0500545181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9910F2181BF4A00545181 /* NYSWeChatUserinfoModel.h */,
+				C8B991102181BF4A00545181 /* NYSWeChatUserinfoModel.m */,
+				C8B991122181BF5D00545181 /* NYSQQUserInfoModel.h */,
+				C8B991132181BF5D00545181 /* NYSQQUserInfoModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C8EEE1E72180223A00A2DB1F = {
@@ -178,11 +312,13 @@
 		C8EEE1F22180223A00A2DB1F /* AppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C8B991152181C2AB00545181 /* AppDemo.entitlements */,
 				C8EEE24F2180550400A2DB1F /* Main */,
 				C8EEE2452180541D00A2DB1F /* NewFeature */,
 				C8EEE2282180224500A2DB1F /* LoginRegister */,
 				C8EEE2442180541D00A2DB1F /* Home */,
 				C8EEE2462180541D00A2DB1F /* Me */,
+				C8EEE250218056B500A2DB1F /* PrefixHeader.pch */,
 				C8EEE1F32180223A00A2DB1F /* AppDelegate.h */,
 				C8EEE1F42180223A00A2DB1F /* AppDelegate.m */,
 				C8EEE1F62180223A00A2DB1F /* ViewController.h */,
@@ -193,7 +329,6 @@
 				C8EEE2042180223B00A2DB1F /* Info.plist */,
 				C8EEE2052180223B00A2DB1F /* main.m */,
 				C8EEE1FC2180223A00A2DB1F /* AppDemo.xcdatamodeld */,
-				C8EEE250218056B500A2DB1F /* PrefixHeader.pch */,
 			);
 			path = AppDemo;
 			sourceTree = "<group>";
@@ -219,6 +354,8 @@
 		C8EEE2282180224500A2DB1F /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
+				C8B9910E2181BF0500545181 /* Model */,
+				C8B9910D2181BEFB00545181 /* Controller */,
 				C8EEE22E21804A0300A2DB1F /* View */,
 				C8EEE229218024A200A2DB1F /* NYSLoginViewController.h */,
 				C8EEE22A218024A200A2DB1F /* NYSLoginViewController.m */,
@@ -247,9 +384,13 @@
 		C8EEE2442180541D00A2DB1F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C8B990F62181746800545181 /* Model */,
 				C8EEE24A218054AD00A2DB1F /* NYSHomeViewController.h */,
 				C8EEE24B218054AD00A2DB1F /* NYSHomeViewController.m */,
 				C8EEE24C218054AD00A2DB1F /* NYSHomeViewController.xib */,
+				C8B990EB21815FAF00545181 /* NYSConversationViewController.h */,
+				C8B990EC21815FAF00545181 /* NYSConversationViewController.m */,
+				C8B990ED21815FAF00545181 /* NYSConversationViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -266,6 +407,10 @@
 		C8EEE2462180541D00A2DB1F /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				C8B990DE2181542D00545181 /* Controller */,
+				C8B990E02181544F00545181 /* View */,
+				C8B990DF2181544700545181 /* Model */,
+				C8B990FA21817EEA00545181 /* 关于 */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -273,6 +418,7 @@
 		C8EEE24F2180550400A2DB1F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C8B990F52181733F00545181 /* view */,
 				C8C0D5CD21806A9000A1B7F3 /* NYSTabViewController.h */,
 				C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */,
 				C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */,
@@ -352,6 +498,17 @@
 				TargetAttributes = {
 					C8EEE1EF2180223A00A2DB1F = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					C8EEE20A2180223C00A2DB1F = {
 						CreatedOnToolsVersion = 10.0;
@@ -388,13 +545,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B990DD21814FB000545181 /* NYSMeViewController.xib in Resources */,
 				C8EEE2032180223B00A2DB1F /* LaunchScreen.storyboard in Resources */,
 				C8C0D5CE21806A9000A1B7F3 /* NYSTabViewController.xib in Resources */,
 				C8EEE22D218024A200A2DB1F /* NYSLoginViewController.xib in Resources */,
+				C8B991012181813F00545181 /* NYSAboutViewController.xib in Resources */,
+				C8B991062181858B00545181 /* UserPrivacyAgreement.pdf in Resources */,
 				C8EEE23C21804B2B00A2DB1F /* NYSRegisterViewController.xib in Resources */,
 				C8EEE2002180223B00A2DB1F /* Assets.xcassets in Resources */,
+				C8B990EF21815FAF00545181 /* NYSConversationViewController.xib in Resources */,
 				C8EEE23A21804B2400A2DB1F /* NYSForgetPasswordViewController.xib in Resources */,
 				C8EEE24E218054AE00A2DB1F /* NYSHomeViewController.xib in Resources */,
+				C8B990F32181733A00545181 /* QMHCommitView.xib in Resources */,
+				C8B990E4218154AD00545181 /* NYSMeTableViewCell.xib in Resources */,
+				C8B990EA218154BC00545181 /* me.plist in Resources */,
 				C8EEE1FB2180223A00A2DB1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,17 +692,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8EEE22C218024A200A2DB1F /* NYSLoginViewController.m in Sources */,
+				C8B991142181BF5D00545181 /* NYSQQUserInfoModel.m in Sources */,
 				C8EEE1F82180223A00A2DB1F /* ViewController.m in Sources */,
 				C8EEE1FE2180223A00A2DB1F /* AppDemo.xcdatamodeld in Sources */,
+				C8B990F92181748900545181 /* NYSChatDataSource.m in Sources */,
+				C8B9910C21819B4E00545181 /* NYSTabbar.m in Sources */,
+				C8B991042181828000545181 /* NYSUserProtoclViewController.m in Sources */,
 				C8EEE2062180223B00A2DB1F /* main.m in Sources */,
+				C8B991112181BF4A00545181 /* NYSWeChatUserinfoModel.m in Sources */,
 				C8EEE24D218054AD00A2DB1F /* NYSHomeViewController.m in Sources */,
+				C8B990FE2181812800545181 /* NYSAboutViewController.m in Sources */,
 				C8EEE23721804A7800A2DB1F /* NYSForgetPasswordViewController.m in Sources */,
 				C8C0D5CF21806A9000A1B7F3 /* NYSTabViewController.m in Sources */,
 				C8EEE23221804A5B00A2DB1F /* NYSRegisterViewController.m in Sources */,
+				C8B990E5218154AD00545181 /* NYSMeTableViewCell.m in Sources */,
+				C8B990E9218154BC00545181 /* NYSMeModel.m in Sources */,
 				C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */,
 				C8EEE2492180544800A2DB1F /* NYSNewFeatureViewController.m in Sources */,
 				C8EEE23F218050EB00A2DB1F /* NGTextField.m in Sources */,
 				C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */,
+				C8B990EE21815FAF00545181 /* NYSConversationViewController.m in Sources */,
+				C8B990F42181733A00545181 /* QMHCommitView.m in Sources */,
+				C8B990DC21814FB000545181 /* NYSMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,8 +885,9 @@
 			baseConfigurationReference = A5698880DFC49ABFEBB2F970 /* Pods-AppDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppDemo/AppDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F9J739W8Y4;
+				DEVELOPMENT_TEAM = DJ2U3WGZB7;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AppDemo/PrefixHeader.pch;
@@ -740,7 +916,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NiYongsheng.AppDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NYS.AppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -752,8 +928,9 @@
 			baseConfigurationReference = C9D94907D354ECCEB66FA3DB /* Pods-AppDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppDemo/AppDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F9J739W8Y4;
+				DEVELOPMENT_TEAM = DJ2U3WGZB7;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AppDemo/PrefixHeader.pch;
@@ -782,7 +959,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NiYongsheng.AppDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NYS.AppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
