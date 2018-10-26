@@ -21,7 +21,9 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
-  - NYSTK (0.0.2)
+  - NYSMC (0.2.1):
+    - AFNetworking
+  - NYSTK (0.0.4)
   - RongCloudIM (2.9.7):
     - RongCloudIM/IMKit (= 2.9.7)
     - RongCloudIM/IMLib (= 2.9.7)
@@ -59,12 +61,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - JPush (= 3.1.0)
+  - JPush
   - KMNavigationBarTransition
   - Masonry
   - MJExtension
   - MJRefresh
-  - NYSTK (~> 0.0.2)
+  - NYSMC (~> 0.2.1)
+  - NYSTK (~> 0.0.4)
   - RongCloudIM
   - SDWebImage
   - SVProgressHUD
@@ -85,6 +88,7 @@ SPEC REPOS:
     - Masonry
     - MJExtension
     - MJRefresh
+    - NYSMC
     - NYSTK
     - RongCloudIM
     - SDWebImage
@@ -103,7 +107,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  NYSTK: 81808935eb9c827a07433ce0720a6624ab5997f8
+  NYSMC: 5ec49a7712fa7b3cc57883bfacc79322d03b9122
+  NYSTK: ef5aef4dd1177cca2419e06f040abe9d452e00f4
   RongCloudIM: 0a039a658fe5e40f62d8f2a14c3df3629c12526a
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
@@ -113,6 +118,6 @@ SPEC CHECKSUMS:
   WXWaveView: f8424284812536a3842bc5dd9afb943e53e911a8
   XLForm: 2250b4e96ab8ffa5f3355838c79edd90de451782
 
-PODFILE CHECKSUM: 997ee87372d34c606c4c2f808897a0833a1e0837
+PODFILE CHECKSUM: f68d2ffdc53fc81f3aac2d0c949efa07608548fa
 
 COCOAPODS: 1.5.2

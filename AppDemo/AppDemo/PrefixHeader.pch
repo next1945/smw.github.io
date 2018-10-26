@@ -9,7 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#define POSTURL @"http://103.238.225.222:8080/api"
+#define POSTURL @"http://103.278.225.222:8080/api"
 #define APPID @"1438587731"
 #define AppStoreURL @"https://itunes.apple.com/cn/app/id1438587731"
 
@@ -17,16 +17,16 @@
 #define WXAPPID @"wxa1ef79a68ee78dc6"
 #define APPSECRET @"df13989d289c27b9703ec65ef8d519db"
 // QQ登录
-#define QQAPPID @"1106681033"
-#define QQAPPKEY @"PTC8VnALh7zKAqKe"
+#define QQAPPID @"110668133"
+#define QQAPPKEY @"PTC8VnALh7zKqKe"
 // 支付宝支付
-#define AlipayAPPID @"2018061960416551"
+#define AlipayAPPID @"201806196016551"
 // 极光推送
-#define JPUSH_APPKEY @"dbbe5990f07ed34325e34566"
+#define JPUSH_APPKEY @"dbe5990f07ed34325e34566"
 #define JPUSH_CHANNEl @"App Store"
 #define isProdution 1
 // 融云AppKey
-#define RCAPPKEY @"n19jmcy5n8fz9"
+#define RCAPPKEY @"n19jcy5n8fz9"
 // 友盟AppKey
 #define UMAPPKEY @"5ba4af8fb465f5d22d000095"
 
@@ -35,7 +35,7 @@
 // cell圆角
 #define CellRadius 15
 
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define WS(weakSelf) __weak __typeof(&*self)weakSelf = self;
 
 // 1.包含UIimage分类（文件名拼接、自由拉伸）
 #import <MJRefresh.h>
@@ -45,6 +45,7 @@
 #import <SVProgressHUD.h>
 #import <Masonry.h>
 #import <NYSTK/NYSTK.h>
+#import <NYSMC/NYSMC.h>
 
 // 2.屏幕尺寸
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -60,6 +61,7 @@
 CGRect rectNav = self.navigationController.navigationBar.frame;\
 (rectNav.size.height);\
 })\
+
 // 5.获取状态栏的高度
 #define getRectStatusHight \
 ({\

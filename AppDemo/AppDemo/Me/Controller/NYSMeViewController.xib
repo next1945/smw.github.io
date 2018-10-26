@@ -155,9 +155,9 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGe-7z-sOv">
-                                <rect key="frame" x="155" y="40" width="65" height="65"/>
+                                <rect key="frame" x="150" y="40" width="75" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="jHU-dW-MeY"/>
+                                    <constraint firstAttribute="width" constant="75" id="jHU-dW-MeY"/>
                                     <constraint firstAttribute="width" secondItem="SGe-7z-sOv" secondAttribute="height" multiplier="1:1" id="voW-cg-iwZ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Icon"/>
@@ -166,7 +166,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倪永胜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upP-74-5e0">
-                                <rect key="frame" x="87.5" y="111" width="200" height="21"/>
+                                <rect key="frame" x="87.5" y="121" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1aG-bU-Lcf"/>
                                     <constraint firstAttribute="width" constant="200" id="oBm-R3-Z3o"/>

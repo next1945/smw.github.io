@@ -93,6 +93,7 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/NYSMC/Resources/images.bundle"
   install_resource "${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle"
   install_resource "${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj"
   install_resource "${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj"
@@ -113,6 +114,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/NYSMC/Resources/images.bundle"
   install_resource "${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle"
   install_resource "${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj"
   install_resource "${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj"

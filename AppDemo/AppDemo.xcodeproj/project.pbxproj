@@ -23,7 +23,6 @@
 		C8B991012181813F00545181 /* NYSAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B991002181813F00545181 /* NYSAboutViewController.xib */; };
 		C8B991042181828000545181 /* NYSUserProtoclViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B991032181828000545181 /* NYSUserProtoclViewController.m */; };
 		C8B991062181858B00545181 /* UserPrivacyAgreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8B991052181858A00545181 /* UserPrivacyAgreement.pdf */; };
-		C8B9910C21819B4E00545181 /* NYSTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B9910B21819B4E00545181 /* NYSTabbar.m */; };
 		C8B991112181BF4A00545181 /* NYSWeChatUserinfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B991102181BF4A00545181 /* NYSWeChatUserinfoModel.m */; };
 		C8B991142181BF5D00545181 /* NYSQQUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B991132181BF5D00545181 /* NYSQQUserInfoModel.m */; };
 		C8B991192181C3CA00545181 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B991182181C3CA00545181 /* HealthKit.framework */; };
@@ -101,8 +100,6 @@
 		C8B991022181828000545181 /* NYSUserProtoclViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSUserProtoclViewController.h; sourceTree = "<group>"; };
 		C8B991032181828000545181 /* NYSUserProtoclViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSUserProtoclViewController.m; sourceTree = "<group>"; };
 		C8B991052181858A00545181 /* UserPrivacyAgreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = UserPrivacyAgreement.pdf; sourceTree = "<group>"; };
-		C8B9910A21819B4E00545181 /* NYSTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSTabbar.h; sourceTree = "<group>"; };
-		C8B9910B21819B4E00545181 /* NYSTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSTabbar.m; sourceTree = "<group>"; };
 		C8B9910F2181BF4A00545181 /* NYSWeChatUserinfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSWeChatUserinfoModel.h; sourceTree = "<group>"; };
 		C8B991102181BF4A00545181 /* NYSWeChatUserinfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSWeChatUserinfoModel.m; sourceTree = "<group>"; };
 		C8B991122181BF5D00545181 /* NYSQQUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSQQUserInfoModel.h; sourceTree = "<group>"; };
@@ -235,16 +232,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C8B990F52181733F00545181 /* view */ = {
+		C8B990F52181733F00545181 /* Projectile */ = {
 			isa = PBXGroup;
 			children = (
 				C8B990F12181733900545181 /* QMHCommitView.h */,
 				C8B990F22181733A00545181 /* QMHCommitView.m */,
 				C8B990F02181733900545181 /* QMHCommitView.xib */,
-				C8B9910A21819B4E00545181 /* NYSTabbar.h */,
-				C8B9910B21819B4E00545181 /* NYSTabbar.m */,
 			);
-			path = view;
+			path = Projectile;
 			sourceTree = "<group>";
 		};
 		C8B990F62181746800545181 /* Model */ = {
@@ -272,6 +267,15 @@
 		C8B9910D2181BEFB00545181 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C8EEE229218024A200A2DB1F /* NYSLoginViewController.h */,
+				C8EEE22A218024A200A2DB1F /* NYSLoginViewController.m */,
+				C8EEE22B218024A200A2DB1F /* NYSLoginViewController.xib */,
+				C8EEE22F21804A5B00A2DB1F /* NYSRegisterViewController.h */,
+				C8EEE23021804A5B00A2DB1F /* NYSRegisterViewController.m */,
+				C8EEE23B21804B2B00A2DB1F /* NYSRegisterViewController.xib */,
+				C8EEE23421804A7800A2DB1F /* NYSForgetPasswordViewController.h */,
+				C8EEE23521804A7800A2DB1F /* NYSForgetPasswordViewController.m */,
+				C8EEE23921804B2400A2DB1F /* NYSForgetPasswordViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +289,13 @@
 				C8B991132181BF5D00545181 /* NYSQQUserInfoModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C8D75D8F21832D0E00E46C31 /* NewFeatureImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewFeatureImages;
 			sourceTree = "<group>";
 		};
 		C8EEE1E72180223A00A2DB1F = {
@@ -354,18 +365,9 @@
 		C8EEE2282180224500A2DB1F /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
-				C8B9910E2181BF0500545181 /* Model */,
 				C8B9910D2181BEFB00545181 /* Controller */,
+				C8B9910E2181BF0500545181 /* Model */,
 				C8EEE22E21804A0300A2DB1F /* View */,
-				C8EEE229218024A200A2DB1F /* NYSLoginViewController.h */,
-				C8EEE22A218024A200A2DB1F /* NYSLoginViewController.m */,
-				C8EEE22B218024A200A2DB1F /* NYSLoginViewController.xib */,
-				C8EEE22F21804A5B00A2DB1F /* NYSRegisterViewController.h */,
-				C8EEE23021804A5B00A2DB1F /* NYSRegisterViewController.m */,
-				C8EEE23B21804B2B00A2DB1F /* NYSRegisterViewController.xib */,
-				C8EEE23421804A7800A2DB1F /* NYSForgetPasswordViewController.h */,
-				C8EEE23521804A7800A2DB1F /* NYSForgetPasswordViewController.m */,
-				C8EEE23921804B2400A2DB1F /* NYSForgetPasswordViewController.xib */,
 			);
 			path = LoginRegister;
 			sourceTree = "<group>";
@@ -384,13 +386,8 @@
 		C8EEE2442180541D00A2DB1F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C8FDB2A92182E1D7003889F5 /* Controller */,
 				C8B990F62181746800545181 /* Model */,
-				C8EEE24A218054AD00A2DB1F /* NYSHomeViewController.h */,
-				C8EEE24B218054AD00A2DB1F /* NYSHomeViewController.m */,
-				C8EEE24C218054AD00A2DB1F /* NYSHomeViewController.xib */,
-				C8B990EB21815FAF00545181 /* NYSConversationViewController.h */,
-				C8B990EC21815FAF00545181 /* NYSConversationViewController.m */,
-				C8B990ED21815FAF00545181 /* NYSConversationViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -398,6 +395,7 @@
 		C8EEE2452180541D00A2DB1F /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
+				C8D75D8F21832D0E00E46C31 /* NewFeatureImages */,
 				C8EEE2472180544800A2DB1F /* NYSNewFeatureViewController.h */,
 				C8EEE2482180544800A2DB1F /* NYSNewFeatureViewController.m */,
 			);
@@ -418,12 +416,25 @@
 		C8EEE24F2180550400A2DB1F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				C8B990F52181733F00545181 /* view */,
+				C8B990F52181733F00545181 /* Projectile */,
 				C8C0D5CD21806A9000A1B7F3 /* NYSTabViewController.h */,
 				C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */,
 				C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		C8FDB2A92182E1D7003889F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8EEE24A218054AD00A2DB1F /* NYSHomeViewController.h */,
+				C8EEE24B218054AD00A2DB1F /* NYSHomeViewController.m */,
+				C8EEE24C218054AD00A2DB1F /* NYSHomeViewController.xib */,
+				C8B990EB21815FAF00545181 /* NYSConversationViewController.h */,
+				C8B990EC21815FAF00545181 /* NYSConversationViewController.m */,
+				C8B990ED21815FAF00545181 /* NYSConversationViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -642,6 +653,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/NYSMC/Resources/images.bundle",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
@@ -663,6 +675,7 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/images.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
@@ -696,7 +709,6 @@
 				C8EEE1F82180223A00A2DB1F /* ViewController.m in Sources */,
 				C8EEE1FE2180223A00A2DB1F /* AppDemo.xcdatamodeld in Sources */,
 				C8B990F92181748900545181 /* NYSChatDataSource.m in Sources */,
-				C8B9910C21819B4E00545181 /* NYSTabbar.m in Sources */,
 				C8B991042181828000545181 /* NYSUserProtoclViewController.m in Sources */,
 				C8EEE2062180223B00A2DB1F /* main.m in Sources */,
 				C8B991112181BF4A00545181 /* NYSWeChatUserinfoModel.m in Sources */,
@@ -888,6 +900,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppDemo/AppDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJ2U3WGZB7;
+				ENABLE_BITCODE = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AppDemo/PrefixHeader.pch;
@@ -931,6 +944,7 @@
 				CODE_SIGN_ENTITLEMENTS = AppDemo/AppDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DJ2U3WGZB7;
+				ENABLE_BITCODE = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AppDemo/PrefixHeader.pch;

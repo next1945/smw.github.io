@@ -10,7 +10,8 @@
 #import "NYSHomeViewController.h"
 #import "NYSMeViewController.h"
 #import "NYSLoginViewController.h"
-#import "NYSTabbar.h"
+
+#define StandOutHeight 17
 
 @interface NYSTabViewController ()
 
@@ -18,27 +19,45 @@
 
 @implementation NYSTabViewController
 
+- (void)viewWillLayoutSubviews {
+    CGRect tabFrame = self.tabBar.frame;
+    tabFrame.size.height = self.tabBar.frame.size.height + StandOutHeight;
+    tabFrame.origin.y = self.view.frame.size.height - (self.tabBar.frame.size.height + StandOutHeight);
+    self.tabBar.frame = tabFrame;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self selector:@selector(logout) name:@"LogoutNotification" object:nil];
     
-    NYSTabbar *myTabBar = [[NYSTabbar alloc] init];
-//    [self setValue:myTabBar forKey:@"tabBar"];
+    // KVC替换tabbar
+    NYSBlugeTabBar *myTabBar = [[NYSBlugeTabBar alloc] initWithStandOutHeight:StandOutHeight radius:27 strokelineWidth:0.7 strokelineColor:[UIColor colorWithWhite:0.765 alpha:1.000] andTabBarBackgroundColor:[UIColor whiteColor]];
+    myTabBar.tabBarItemY = 10;
+    myTabBar.centerTabBarItemY = 0;
+    myTabBar.alpha = 0.95;
+    [self setValue:myTabBar forKey:@"tabBar"];
     
+    // 首页
     UINavigationController *navHome = [[UINavigationController alloc] initWithRootViewController:[[NYSHomeViewController alloc] init]];
-    navHome.tabBarItem.image = [[UIImage imageNamed:@"Home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    navHome.tabBarItem.selectedImage = [[UIImage imageNamed:@"Home_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    navHome.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[[UIImage imageNamed:@"Home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Home_selected"]  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
+    // 凸起
+    NYSWebViewController *webVC = [[NYSWebViewController alloc] init];
+    webVC.isHiddenNavigationController = NO;
+    webVC.progressBarColor = [UIColor colorWithRed:0.20 green:0.50 blue:0.92 alpha:1.00];
+    webVC.title = [[NSUserDefaults standardUserDefaults] objectForKey:@"NYSC_SheelURL"];
+    UINavigationController *navPop = [[UINavigationController alloc] initWithRootViewController:webVC];
+    navPop.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Popping" image:[[UIImage imageNamed:@"Popping"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:nil];
+    
+    // 我的
     UINavigationController *navMe = [[UINavigationController alloc] initWithRootViewController:[[NYSMeViewController alloc] init]];
-    navMe.title = @"我的";
-    navMe.tabBarItem.image = [[UIImage imageNamed:@"Me"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    navMe.tabBarItem.selectedImage = [[UIImage imageNamed:@"Me_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
+    navMe.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[[UIImage imageNamed:@"Me"]  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Me_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.00]} forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:0.20 green:0.50 blue:0.92 alpha:1.00]} forState:UIControlStateSelected];
     
-    self.viewControllers = [NSArray arrayWithObjects:navHome, navMe, nil];
+    self.viewControllers = [NSArray arrayWithObjects:navHome, navPop, navMe, nil];
 }
 
 - (void)logout {
@@ -54,6 +73,7 @@
     }
 }
 
+/** 清除缓存 */
 - (void)clearUserinfo {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     [userDefault removeObjectForKey:@"account"];

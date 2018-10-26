@@ -1,6 +1,6 @@
 //
 //  HelperUtil.h
-//  SQLite（购物）
+//  SQLite
 //
 //  Created by Yock Deng on 15/8/22.
 //  Copyright (c) 2015年 蓝桥. All rights reserved.

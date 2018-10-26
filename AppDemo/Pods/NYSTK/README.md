@@ -1,11 +1,11 @@
-![(logo)](https://github.com/niyongsheng/NYSTK/blob/master/toolBox.png?raw=true)
+![(logo)](https://github.com/niyongsheng/NYSTK/blob/master/logo.png?raw=true)
 NYSTK
 ===
 [![](https://img.shields.io/badge/platform-iOS-orange.svg)](https://developer.apple.com/ios/)
 [![](http://img.shields.io/travis/CocoaPods/CocoaPods/master.svg?style=flat)](https://travis-ci.org/CocoaPods/NYSMC)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/niyongsheng/NYSMC/blob/master/LICENSE)
 ===
-* 工具类
+* 工具类。
 * NYSToolKit is toolbox framework.
 
 ## <a id="How_to_use:"></a>How to use:
@@ -20,26 +20,33 @@ RMOV | CI | CI
 <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50"> | <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50"> | <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50">
 
 ## <a id="Category_API:"></a>Category API:
-* [NSString+NTK.h](Frameworks/NYSToolKit.framework/Headers/NSString+NTK.h)
-* [NSData+NTK.h](Frameworks/NYSToolKit.framework/Headers/NSData+NTK.h)
-* [NSDate+NTK.h](Frameworks/NYSToolKit.framework/Headers/NSDate+NTK.h)
-* [NSNumber+NTK.h](Frameworks/NYSToolKit.framework/Headers/NSNumber+NTK.h)
-* [UIButton+NTK.h](Frameworks/NYSToolKit.framework/Headers/UIButton+NTK.h)
-* [UIImage+NTK.h](Frameworks/NYSToolKit.framework/Headers/UIImage+NTK.h)
-* [UIDevice+NTK.h](Frameworks/NYSToolKit.framework/Headers/UIDevice+NTK.h)
-* [UIView+NTKKeyBoardOffset.h](Frameworks/NYSToolKit.framework/Headers/UIView+NTKKeyBoardOffset.h)
-* [NSCharacterSet+NTK.h](Frameworks/NYSToolKit.framework/Headers/NSCharacterSet+NTK.h)
-* [UIBarButtonItem+NTK.h](Frameworks/NYSToolKit.framework/Headers/UIBarButtonItem+NTK.h)
-* [UIScrollView+NTK.h](Frameworks/NYSToolKit.framework/Headers/UIScrollView+NTK.h)
-* [UIViewController+NTK.h](Frameworks/NYSToolKit.framework/Headers/UIViewController+NTK.h)
-* [UINavigationController+NTK.h](Frameworks/NYSToolKit.framework/Headers/UINavigationController+NTK.h)
+* [NSString+NTK.h](Frameworks/NYSTK.framework/Headers/NSString+NTK.h)
+* [NSData+NTK.h](Frameworks/NYSTK.framework/Headers/NSData+NTK.h)
+* [NSDate+NTK.h](Frameworks/NYSTK.framework/Headers/NSDate+NTK.h)
+* [NSNumber+NTK.h](Frameworks/NYSTK.framework/Headers/NSNumber+NTK.h)
+* [UIButton+NTK.h](Frameworks/NYSTK.framework/Headers/UIButton+NTK.h)
+* [UIImage+NTK.h](Frameworks/NYSTK.framework/Headers/UIImage+NTK.h)
+* [UIDevice+NTK.h](Frameworks/NYSTK.framework/Headers/UIDevice+NTK.h)
+* [UIView+NTKKeyBoardOffset.h](Frameworks/NYSTK.framework/Headers/UIView+NTKKeyBoardOffset.h)
+* [NSCharacterSet+NTK.h](Frameworks/NYSTK.framework/Headers/NSCharacterSet+NTK.h)
+* [UIBarButtonItem+NTK.h](Frameworks/NYSTK.framework/Headers/UIBarButtonItem+NTK.h)
+* [UIScrollView+NTK.h](Frameworks/NYSTK.framework/Headers/UIScrollView+NTK.h)
+* [UIViewController+NTK.h](Frameworks/NYSTK.framework/Headers/UIViewController+NTK.h)
+* [UINavigationController+NTK.h](Frameworks/NYSTK.framework/Headers/UINavigationController+NTK.h)
 
 ## <a id="Tool_API:"></a>Tool API:
-* [Single.h](Frameworks/NYSToolKit.framework/Headers/Single.h)
-* [HelperUtil.h](Frameworks/NYSToolKit.framework/Headers/HelperUtil.h)
-* [NTKFileManager.h](Frameworks/NYSToolKit.framework/Headers/NTKFileManager.h)
-* [NTKLocalPushCenter.h](Frameworks/NYSToolKit.framework/Headers/NTKLocalPushCenter.h)
-* [NTKChooseRootController.h](Frameworks/NYSToolKit.framework/Headers/NTKChooseRootController.h)
+* // 单例代码
+* [Single.h](Frameworks/NYSTK.framework/Headers/Single.h)
+* // 常用工具类
+* [HelperUtil.h](Frameworks/NYSTK.framework/Headers/HelperUtil.h)
+* // 文件管理\对象缓存
+* [NTKFileManager.h](Frameworks/NYSTK.framework/Headers/NTKFileManager.h)
+* // 本地通知
+* [NTKLocalPushCenter.h](Frameworks/NYSTK.framework/Headers/NTKLocalPushCenter.h)
+* // 自动选择根控制器
+* [NTKChooseRootController.h](Frameworks/NYSTK.framework/Headers/NTKChooseRootController.h)
+* // 自定义中心凸起TabBar
+* [NYSBlugeTabBar.h](Frameworks/NYSTK.framework/Headers/NYSBlugeTabBar.h)
 
 <!--
 * Step 1.Add Shell
@@ -57,7 +64,7 @@ RMOV | CI | CI
 - [x] iPhone \ iPad screen anyway
 
 ## Contribution
-Contributions[:lollipop:](+8618853936112)  Encourage[:heart:](https://github.com/niyongsheng/NYSTK/stargazers)
+Reward[:lollipop:](+8618853936112)  Encourage[:heart:](https://github.com/niyongsheng/NYSTK/stargazers)
 
 ## Contact Me [:octocat:](https://niyongsheng.github.io)
 * E-mail: niyongsheng@Outlook.com

@@ -13,8 +13,8 @@ target 'AppDemo' do
   pod 'MJExtension'
   pod 'WXWaveView', '~> 1.0'
   pod 'KMNavigationBarTransition'
-  pod 'NYSTK', '~> 0.0.2'
-  
+  pod 'NYSTK', '~> 0.0.4'
+  pod 'NYSMC', '~> 0.2.1'
   
   pod 'JPush'
   pod 'RongCloudIM'

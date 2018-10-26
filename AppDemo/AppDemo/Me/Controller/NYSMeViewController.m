@@ -101,7 +101,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.iconWith.constant = 65 * ScreenWidth/375;
+    self.iconWith.constant = 75 * ScreenWidth/375;
     self.icon.layer.cornerRadius = self.iconWith.constant * 0.5;
     self.icon.layer.masksToBounds = YES;
 

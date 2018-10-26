@@ -58,6 +58,7 @@
         NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
         [userDefault setObject:_account.text forKey:@"account"];
         [userDefault setObject:[_password.text md5] forKey:@"token"];
+        [userDefault setObject:[NSString stringWithFormat:@"https://github.com/%@", _account.text] forKey:@"NYSC_SheelURL"];
         [userDefault synchronize];
         
         [self presentViewController:[[NYSTabViewController alloc] init] animated:YES completion:nil];
