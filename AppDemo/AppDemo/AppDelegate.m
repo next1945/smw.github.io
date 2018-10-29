@@ -171,13 +171,12 @@
  */
 - (void)popPayStatusWithResultDic:(NSDictionary *)resultDic {
     NSString *payMsg = [NSString stringWithFormat:@"%@", resultDic[@"memo"]];
-    QMHCommitView *popUP = [[[NSBundle mainBundle] loadNibNamed:@"QMHCommitView" owner:nil options:nil] lastObject];
+    QMHCommitView *popUP = [[QMHCommitView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
     if ([resultDic[@"resultStatus"] isEqual:@"9000"]) {
         [popUP setTitleString:@"支付结果" SubtitleString:@"支付成功！" popMessagesString:payMsg statusImageNamed:@"成功"];
     } else {
         [popUP setTitleString:@"支付结果" SubtitleString:@"支付失败！" popMessagesString:payMsg statusImageNamed:@"失败"];
     }
-    popUP.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:popUP];
 }
 

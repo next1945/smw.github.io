@@ -25,6 +25,11 @@
 			<string>com.AppDemo</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>wxa1ef79a68ee78dc6</string>
+				<string>QQ41F69CC9</string>
+				<string>tencent1106681033</string>
+				<string>tencent1106681033.content</string>
+				<string>alipay</string>
 				<string>AppDemo</string>
 			</array>
 		</dict>
@@ -99,8 +104,6 @@
 	<string>需要添加新的提醒事项,是否允许访问提醒事项？</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

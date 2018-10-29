@@ -20,11 +20,20 @@
 @end
 
 @implementation QMHCommitView
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // 灰色遮罩
-    self.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
-    self.backgroundColor = [UIColor colorWithWhite:0.f alpha:0.5];
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = [UIColor clearColor];
+        // 半透明遮罩
+        UIBlurEffect * blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+        UIVisualEffectView * effectView = [[UIVisualEffectView alloc]initWithEffect:blur];
+//        effectView.alpha = 0.95;
+        effectView.frame = frame;
+        UIView *nib = [[[NSBundle mainBundle] loadNibNamed:@"QMHCommitView" owner:self options:nil] lastObject];
+        nib.frame = frame;
+        [effectView.contentView addSubview:nib];
+        [self addSubview:effectView];
+    }
+    return self;
 }
 
 - (void)drawRect:(CGRect)rect {

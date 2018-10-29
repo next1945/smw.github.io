@@ -12,6 +12,8 @@
 #import "NYSMeModel.h"
 #import "NYSMeTableViewCell.h"
 
+#import "NYSDosign.h"
+
 #import <UIImageView+WebCache.h>
 #import <CoreMotion/CoreMotion.h>
 #import <UShareUI/UShareUI.h>
@@ -49,6 +51,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *signDays;
 
 @property (nonatomic, strong) CMPedometer *pedometer;
+
+@property (assign, nonatomic) NSInteger scoreCount;
+@property (assign, nonatomic) NSInteger signDayCount;
 @end
 
 @implementation NYSMeViewController
@@ -155,22 +160,79 @@
         self.waveView = [WXWaveView addToView:self.tableView.tableHeaderView withFrame:CGRectMake(0, CGRectGetHeight(self.tableView.tableHeaderView.frame) - 4.5, CGRectGetWidth(self.tableView.frame), 5)];
         
         // Optional Setting
-//        self.waveView.waveTime = 2.f;     // When 0, the wave will never stop;
+        self.waveView.waveTime = 2.f;
 //        self.waveView.waveColor = [UIColor whiteColor];
         self.waveView.waveSpeed = 15.f; // 波速度
         self.waveView.angularSpeed = 2.0f; // 角速度
     }
 }
 
+// 滚动数字
+- (void)animateTextChange:(CFTimeInterval)duration withLayer:(CALayer *)layer {
+    CATransition *trans = [[CATransition alloc] init];
+    trans.type = kCATransitionMoveIn;
+    trans.subtype = kCATransitionFromTop;
+    trans.duration = duration;
+    trans.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+    [layer addAnimation:trans forKey:kCATransitionPush];
+}
+
 #pragma mark - UIScrollView
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    WS(weakSelf);
     if ([self.waveView wave]) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.waveView stop];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [self.waveView stop];
+            [weakSelf getStepsAndDistance];
+            [weakSelf animateTextChange:1.f withLayer:weakSelf.score.layer];
+            weakSelf.score.text = [NSString stringWithFormat:@"%ld", weakSelf.scoreCount];
+            [weakSelf animateTextChange:1.f withLayer:weakSelf.signDays.layer];
+            weakSelf.signDays.text = [NSString stringWithFormat:@"%ld", weakSelf.signDayCount];
         });
     }
 }
 
+/** 读取当前步数距离信息 */
+- (void)getStepsAndDistance {
+    _pedometer = [[CMPedometer alloc] init];
+    if ([CMPedometer isStepCountingAvailable]) {
+        // 获取昨天的步数与距离数据
+        [_pedometer queryPedometerDataFromDate:[self zeroOfDate] toDate:[NSDate dateWithTimeIntervalSinceNow:0] withHandler:^(CMPedometerData * _Nullable pedometerData, NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"计步器error===%@",error);
+                [SVProgressHUD showErrorWithStatus:[error description]];
+                [SVProgressHUD dismissWithDelay:1.0f];
+            } else {
+                NSLog(@"步数===%@",pedometerData.numberOfSteps);
+                NSLog(@"距离===%@",pedometerData.distance);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    // 当前步数
+                    [self animateTextChange:1.f withLayer:self.averageStepNum.layer];
+                    self.averageStepNum.text = [NSString stringWithFormat:@"%.02fkm", [pedometerData.distance floatValue] * 0.001];
+                });
+            }
+        }];
+    } else {
+        NSLog(@"计步器不可用===");
+        [SVProgressHUD showErrorWithStatus:@"计步器不可用"];
+        [SVProgressHUD dismissWithDelay:1.f];
+    }
+}
+
+/** 获取0点钟NSDate */
+- (NSDate *)zeroOfDate {
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:NSUIntegerMax fromDate:[NSDate date]];
+    components.hour = 0;
+    components.minute = 0;
+    components.second = 0;
+    
+    // components.nanosecond = 0 not available in iOS
+    NSTimeInterval ts = (double)(int)[[calendar dateFromComponents:components] timeIntervalSince1970];
+    return [NSDate dateWithTimeIntervalSince1970:ts];
+}
+
+/** 滑动等比例拉伸header */
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     // 获取到tableView偏移量
     CGFloat Offset_y = scrollView.contentOffset.y;
@@ -281,7 +343,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES]; // 取消选中
     if (indexPath.section == 0) {
-        
+        switch (indexPath.row) {
+            case 0: {
+                NYSDosign *dosignSucess = [[NYSDosign alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+                [self.view addSubview:dosignSucess];
+//                [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:dosignSucess];
+                self.scoreCount += 10;
+                self.signDayCount ++;
+            }
+                break;
+                
+            default:
+                break;
+        }
     } else if (indexPath.section == 1) {
         
     } else {

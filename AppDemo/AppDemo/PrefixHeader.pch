@@ -28,7 +28,7 @@
 // 融云AppKey
 #define RCAPPKEY @"n19jcy5n8fz9"
 // 友盟AppKey
-#define UMAPPKEY @"5ba4af8fb465f5d22d000095"
+#define UMAPPKEY @"5bd4062cf1f556edf600075f"
 
 // cell行间距
 #define CellSpacing 15

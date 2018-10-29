@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		986B5652E38CC01D11629CA7 /* libPods-AppDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */; };
+		C81350F721842D9F00C15626 /* NYSDosign.m in Sources */ = {isa = PBXBuildFile; fileRef = C81350F621842D9F00C15626 /* NYSDosign.m */; };
 		C8B990DC21814FB000545181 /* NYSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990D921814FAF00545181 /* NYSMeViewController.m */; };
 		C8B990DD21814FB000545181 /* NYSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990DA21814FAF00545181 /* NYSMeViewController.xib */; };
 		C8B990E4218154AD00545181 /* NYSMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990E1218154AD00545181 /* NYSMeTableViewCell.xib */; };
@@ -31,7 +32,6 @@
 		C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0D5D121806B4800A1B7F3 /* NYSTextField.m */; };
 		C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1F42180223A00A2DB1F /* AppDelegate.m */; };
 		C8EEE1F82180223A00A2DB1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1F72180223A00A2DB1F /* ViewController.m */; };
-		C8EEE1FB2180223A00A2DB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EEE1F92180223A00A2DB1F /* Main.storyboard */; };
 		C8EEE1FE2180223A00A2DB1F /* AppDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1FC2180223A00A2DB1F /* AppDemo.xcdatamodeld */; };
 		C8EEE2002180223B00A2DB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EEE1FF2180223B00A2DB1F /* Assets.xcassets */; };
 		C8EEE2032180223B00A2DB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EEE2012180223B00A2DB1F /* LaunchScreen.storyboard */; };
@@ -77,6 +77,8 @@
 		852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5698880DFC49ABFEBB2F970 /* Pods-AppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C81350F521842D9F00C15626 /* NYSDosign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSDosign.h; sourceTree = "<group>"; };
+		C81350F621842D9F00C15626 /* NYSDosign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSDosign.m; sourceTree = "<group>"; };
 		C8B990D921814FAF00545181 /* NYSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSMeViewController.m; sourceTree = "<group>"; };
 		C8B990DA21814FAF00545181 /* NYSMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYSMeViewController.xib; sourceTree = "<group>"; };
 		C8B990DB21814FAF00545181 /* NYSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSMeViewController.h; sourceTree = "<group>"; };
@@ -116,7 +118,6 @@
 		C8EEE1F42180223A00A2DB1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C8EEE1F62180223A00A2DB1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C8EEE1F72180223A00A2DB1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C8EEE1FA2180223A00A2DB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8EEE1FD2180223A00A2DB1F /* AppDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppDemo.xcdatamodel; sourceTree = "<group>"; };
 		C8EEE1FF2180223B00A2DB1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8EEE2022180223B00A2DB1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,6 +201,15 @@
 				0BB59A33D41BB96C566A6B84 /* Pods-AppDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C81350F421842D6500C15626 /* 签到 */ = {
+			isa = PBXGroup;
+			children = (
+				C81350F521842D9F00C15626 /* NYSDosign.h */,
+				C81350F621842D9F00C15626 /* NYSDosign.m */,
+			);
+			path = "签到";
 			sourceTree = "<group>";
 		};
 		C8B990DE2181542D00545181 /* Controller */ = {
@@ -334,7 +344,6 @@
 				C8EEE1F42180223A00A2DB1F /* AppDelegate.m */,
 				C8EEE1F62180223A00A2DB1F /* ViewController.h */,
 				C8EEE1F72180223A00A2DB1F /* ViewController.m */,
-				C8EEE1F92180223A00A2DB1F /* Main.storyboard */,
 				C8EEE1FF2180223B00A2DB1F /* Assets.xcassets */,
 				C8EEE2012180223B00A2DB1F /* LaunchScreen.storyboard */,
 				C8EEE2042180223B00A2DB1F /* Info.plist */,
@@ -408,6 +417,7 @@
 				C8B990DE2181542D00545181 /* Controller */,
 				C8B990E02181544F00545181 /* View */,
 				C8B990DF2181544700545181 /* Model */,
+				C81350F421842D6500C15626 /* 签到 */,
 				C8B990FA21817EEA00545181 /* 关于 */,
 			);
 			path = Me;
@@ -570,7 +580,6 @@
 				C8B990F32181733A00545181 /* QMHCommitView.xib in Resources */,
 				C8B990E4218154AD00545181 /* NYSMeTableViewCell.xib in Resources */,
 				C8B990EA218154BC00545181 /* me.plist in Resources */,
-				C8EEE1FB2180223A00A2DB1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +732,7 @@
 				C8EEE2492180544800A2DB1F /* NYSNewFeatureViewController.m in Sources */,
 				C8EEE23F218050EB00A2DB1F /* NGTextField.m in Sources */,
 				C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */,
+				C81350F721842D9F00C15626 /* NYSDosign.m in Sources */,
 				C8B990EE21815FAF00545181 /* NYSConversationViewController.m in Sources */,
 				C8B990F42181733A00545181 /* QMHCommitView.m in Sources */,
 				C8B990DC21814FB000545181 /* NYSMeViewController.m in Sources */,
@@ -761,14 +771,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C8EEE1F92180223A00A2DB1F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8EEE1FA2180223A00A2DB1F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C8EEE2012180223B00A2DB1F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

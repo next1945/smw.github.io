@@ -12,6 +12,7 @@
 #import "NYSLoginViewController.h"
 
 #define StandOutHeight 17
+//static CGFloat tabBarHeight = self.tabBar.frame.size.height;
 
 @interface NYSTabViewController ()
 
@@ -20,14 +21,17 @@
 @implementation NYSTabViewController
 
 - (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    
     CGRect tabFrame = self.tabBar.frame;
-    tabFrame.size.height = self.tabBar.frame.size.height + StandOutHeight;
-    tabFrame.origin.y = self.view.frame.size.height - (self.tabBar.frame.size.height + StandOutHeight);
+    tabFrame.size.height = 49 + StandOutHeight;
+    tabFrame.origin.y = self.view.frame.size.height - (49 + StandOutHeight);
     self.tabBar.frame = tabFrame;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self selector:@selector(logout) name:@"LogoutNotification" object:nil];
     
