@@ -347,7 +347,6 @@
             case 0: {
                 NYSDosign *dosignSucess = [[NYSDosign alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
                 [self.view addSubview:dosignSucess];
-//                [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:dosignSucess];
                 self.scoreCount += 10;
                 self.signDayCount ++;
             }
