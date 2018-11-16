@@ -2,22 +2,23 @@
 AppDemo
 ===
 [![](https://img.shields.io/badge/platform-iOS-orange.svg)](https://developer.apple.com/ios/)
-[![](http://img.shields.io/travis/CocoaPods/CocoaPods/master.svg?style=flat)](https://travis-ci.org/CocoaPods/NYSMC)
-[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/niyongsheng/NYSMC/blob/master/LICENSE)
+[![](http://img.shields.io/travis/CocoaPods/CocoaPods/master.svg?style=flat)](https://travis-ci.org/CocoaPods/AppDemo)
+[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/niyongsheng/AppDemo/blob/master/LICENSE)
 ===
 * 快速创建一个App。
 * Quickly Create An Application.
 
-## <a id="How_to_use:"></a>How to use:
-* Installation with CocoaPods：`pod 'NYSTK','~>0.0.1'`
-* Manual import：
-    * Drag All files in the `NYSMC` folder to project
-    * Import the main file：`#import <NYSTK/NYSTK.h>`
+## <a id="How_About_It:"></a>How About It:
+* Framework import：
+    * 核心动画 `CoreAnimation`
+    * 音效播放 `AudioToolbox`
 
 ## <a id="Application_Instance:"></a>Application Instance:
-RMOV | CI | CI
------------- | ------------- | -------------
-<img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50"> | <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50"> | <img src="https://github.com/niyongsheng/NYSTK/blob/master/toy.png?raw=true" width="50" height="50">
+![(RMOV)](https://github.com/niyongsheng/GuessFigure/blob/master/ScreenRecording.mov?raw=true)
+
+Screenshot1 | Screenshot2 | Screenshot3 | Screenshot4
+------------ | ------------- | ------------- | -------------
+<img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.05.42.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.05.55.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.06.57.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.07.13.png?raw=true">
 
 ## <a id="Config_Your_App:"></a>Config Your App:
 ```shell
