@@ -22,8 +22,8 @@ AppDemo
 ## <a id="Application_Instance:"></a>Application Instance:
 <!-- ![(RMOV)](https://github.com/niyongsheng/GuessFigure/blob/master/ScreenRecording.mov?raw=true) -->
 
-RMov | Screenshot1 | Screenshot2
------------- | ------------- | -------------
+Screenshot0 | Screenshot1 | Screenshot2 | Screenshot3
+------------ | ------------- | ------------- | -------------
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.28.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.35.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.38.34.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.46.30.png">
 
 SignIn | RPWD | REG
