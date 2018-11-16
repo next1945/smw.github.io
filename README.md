@@ -14,7 +14,7 @@ AppDemo
     * 音效播放 `AudioToolbox`
 
 ## <a id="Application_Instance:"></a>Application Instance:
-![(RMOV)](https://github.com/niyongsheng/GuessFigure/blob/master/ScreenRecording.mov?raw=true)
+<!-- ![(RMOV)](https://github.com/niyongsheng/GuessFigure/blob/master/ScreenRecording.mov?raw=true) -->
 
 RMov | Screenshot1 | Screenshot2
 ------------ | ------------- | -------------
