@@ -10,19 +10,25 @@ AppDemo
 
 ## <a id="How_About_It:"></a>How About It:
 * Framework import：
-    * 核心动画 `CoreAnimation`
-    * 音效播放 `AudioToolbox`
+    * 核心动画 					`CoreAnimation`
+    * 加载进度条					`KVO`
+    * 音效播放 					`AudioToolbox`
+    * 凸起TabBar					`CALayer、UIBezierPath`
+    * 高斯模糊					`UIBlurEffect`
+    * 关于页						`StoreKit`
+    * 自动填充					`Autofill iOS 12.0`
+    * IM+推送+分享+支付+第三方登录	`UMeng+Jpush\AliPay+WeChatPay`
 
 ## <a id="Application_Instance:"></a>Application Instance:
 <!-- ![(RMOV)](https://github.com/niyongsheng/GuessFigure/blob/master/ScreenRecording.mov?raw=true) -->
 
 RMov | Screenshot1 | Screenshot2
 ------------ | ------------- | -------------
-<img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.05.42.png?raw=true"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.28.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.35.png">
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.29.13.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.28.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.35.png">
 
 SignIn | RPWD | REG
 ------------ | ------------- | -------------
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.13.50.png?raw=true"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.00.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.04.png">
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.13.50.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.00.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.04.png">
 
 ## <a id="Config_Your_App:"></a>Config Your App:
 ```shell
