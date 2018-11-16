@@ -16,9 +16,13 @@ AppDemo
 ## <a id="Application_Instance:"></a>Application Instance:
 ![(RMOV)](https://github.com/niyongsheng/GuessFigure/blob/master/ScreenRecording.mov?raw=true)
 
-Screenshot1 | Screenshot2 | Screenshot3 | Screenshot4
+RMov | Screenshot1 | Screenshot2 | Screenshot3
 ------------ | ------------- | ------------- | -------------
 <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.05.42.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.05.55.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.06.57.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.07.13.png?raw=true">
+
+SignIn | RPWD | REG
+------------ | ------------- | -------------
+<img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.05.42.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.05.55.png?raw=true"> | <img src="https://github.com/niyongsheng/GuessFigure/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2013.06.57.png?raw=true">
 
 ## <a id="Config_Your_App:"></a>Config Your App:
 ```shell
