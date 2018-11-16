@@ -24,7 +24,7 @@
 #import <UMCommonLog/UMCommonLogManager.h>
 #import <AlipaySDK/AlipaySDK.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () <JPUSHRegisterDelegate>
 
 @end
 
