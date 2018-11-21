@@ -60,10 +60,11 @@ SignIn | RPWD | REG
 类目 | UIKit | ContentType | Remark
 ------------ | ------------- | ------------- | -------------
 用户名 | TextField | UserName | no
-密码 | TextField | Password | no
+ 密码  | TextField | Password | no
 新密码 | TextField | New Password | no
 验证码 | TextField | One Time Code | no
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg">
+===
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg width="670" height="370"">
 ===
 
 * 2、设置 apple-app-site-association
