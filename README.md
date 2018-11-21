@@ -103,7 +103,7 @@ SignIn | RPWD | REG
 self.nameField.textContentType = UITextContentTypeUsername;
 if (@available(iOS 12.0, *)) {
     self.passwordField.textContentType = UITextContentTypeNewPassword;
-    self.passwordField.passwordRules = [UITextInputPasswordRules passwordRulesWithDescriptor:@"required: lower; required: upper; allowe: digit; required: [-]; minlength: 5;"];
+    self.passwordField.passwordRules = [UITextInputPasswordRules passwordRulesWithDescriptor:@"required: lower; required: upper; allowe: digit; required: [-]; minlength: 6; maxlength: 16;"];
 
 } else {
     self.passwordField.textContentType = UITextContentTypePassword;
@@ -116,7 +116,6 @@ https://developer.apple.com/password-rules/
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
 https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
 
--->
 ## Remind
 - [x] ARC
 - [x] iOS >= 10.0
