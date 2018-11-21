@@ -98,22 +98,24 @@ SignIn | RPWD | REG
 #### 4、设置 Associated Domains
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
   
-#### 5、设置 Associated Domains
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
-   
-#### 6、官方文档
+#### 6、自动生成密码
+```objc
+self.nameField.textContentType = UITextContentTypeUsername;
+if (@available(iOS 12.0, *)) {
+    self.passwordField.textContentType = UITextContentTypeNewPassword;
+    self.passwordField.passwordRules = [UITextInputPasswordRules passwordRulesWithDescriptor:@"required: lower; required: upper; allowe: digit; required: [-]; minlength: 5;"];
+
+} else {
+    self.passwordField.textContentType = UITextContentTypePassword;
+}
+```
+* Password Rules Validation Tool: 
+https://developer.apple.com/password-rules/
+
+#### 7、官方文档
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
 https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
 
-<!--
-* Step 1.Add Shell
-```shell
-
-```
-* Step 2.AppDelegate.m
-```objc
-
-```
 -->
 ## Remind
 - [x] ARC
