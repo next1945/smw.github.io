@@ -71,13 +71,14 @@ SignIn | RPWD | REG
    > 需要一个支持HTTPS的网站用来存放，apple-app-site-association文件。
    如果没有可以利用GitHub Pages挂载，步骤如下：
    
-  * 2.1、fork我的GitHub Pages
+  * 2.1、Fork我的GitHub Pages
+   > https://niyongsheng.github.io
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767161015.jpg" width="670" height="370">
   
   * 2.2、修改成自己的域名
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg" width="670" height="370">
   
-  * 2.3、验证
+  * 2.3、验证https://niyongsheng.github.io
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/WX20181121-115649.png" width="670" height="370">
   
 #### 3、修改apple-app-site-association文件
