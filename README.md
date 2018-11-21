@@ -56,7 +56,7 @@ SignIn | RPWD | REG
 ```
 
 ## <a id="AutoFill_Password:"></a>AutoFill Password:
-* 1、设置 TextField ContentType
+### 1、设置 TextField ContentType
 
 类目 | UIKit | ContentType | Remark
 ------------ | ------------- | ------------- | -------------
@@ -66,9 +66,8 @@ SignIn | RPWD | REG
 验证码 | TextField | One Time Code | no
 
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg" width="670" height="370">
-===
 
-* 2、设置 apple-app-site-association
+### 2、设置 apple-app-site-association
    > 需要一个支持HTTPS的网站用来存放，apple-app-site-association文件。
    如果没有可以利用GitHub Pages挂载，步骤如下：
    
@@ -81,7 +80,7 @@ SignIn | RPWD | REG
   * 2.3、验证
   
   
-* 2、修改apple-app-site-association文件
+### 3、修改apple-app-site-association文件
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
 ```JSON
@@ -96,18 +95,17 @@ SignIn | RPWD | REG
 ```
 ===
   
-* 3、设置 Associated Domains
+### 4、设置 Associated Domains
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
 ===
   
-* 4、设置 Associated Domains
+### 5、设置 Associated Domains
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
 ===
    
-* 5、官方文档
+### 6、官方文档
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
-
-<img src="https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html" width="670" height="370">
+https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
 
 <!--
 * Step 1.Add Shell
