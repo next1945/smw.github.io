@@ -59,26 +59,26 @@ SignIn | RPWD | REG
 * 1、设置 TextField ContentType
 类目 | UIKit | ContentType | Remark
 ------------ | ------------- | ------------- | -------------
-用户名 | TextField | UserName | 
-密码 | TextField | Password | 
-新密码 | TextField | New Password | 
-验证码 | TextField | One Time Code | 
-[(img)](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg)
+用户名 | TextField | UserName | no
+密码 | TextField | Password | no
+新密码 | TextField | New Password | no
+验证码 | TextField | One Time Code | no
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg">
 ===
 
 * 2、设置 apple-app-site-association
    > 需要一个支持HTTPS的网站用来存放，apple-app-site-association文件。
    如果没有可以利用GitHub Pages挂载，步骤如下：
   2.1、fork我的GitHub Pages
-  [(img)](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767161015.jpg)
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767161015.jpg">
   2.2、修改成自己的域名
-  [()](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg)
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg">
   2.3、验证
   
   
   2.3、修改apple-app-site-association文件
-  [()](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg)
-  [()](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg)
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg">
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg">
   ```JSON
    {
       "webcredentials":{
