@@ -65,47 +65,49 @@ SignIn | RPWD | REG
 新密码 | TextField | New Password | no
 验证码 | TextField | One Time Code | no
 
-===
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg" width="670" height="370">
 ===
 
 * 2、设置 apple-app-site-association
    > 需要一个支持HTTPS的网站用来存放，apple-app-site-association文件。
    如果没有可以利用GitHub Pages挂载，步骤如下：
-  2.1、fork我的GitHub Pages
-  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767161015.jpg" width="670" height="370">
-  2.2、修改成自己的域名
-  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg" width="670" height="370">
-  2.3、验证
-  
-  
-  2.3、修改apple-app-site-association文件
-  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
-  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
-  ```JSON
-   {
-      "webcredentials":{
-         // ${Prefix} Prefix, ${BundleID} Bundle ID ,如果有多个APP依次增加.
-         "apps":["${Prefix}.${BundleID}"],
-         "apps":["${Prefix1}.${BundleID2}"],
-         "apps":["${Prefix2}.${BundleID3}"]
-      }
-   }
-  ```
-  ===
-  
-  * 3、设置 Associated Domains
-  [](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg)
-  ===
-  
-  * 4、设置 Associated Domains
-  [](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg)
-  ===
    
-  * 5、官方文档
-  [](https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg)
+  * 2.1、fork我的GitHub Pages
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767161015.jpg" width="670" height="370">
+  
+  * 2.2、修改成自己的域名
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg" width="670" height="370">
+  
+  * 2.3、验证
+  
+  
+* 2、修改apple-app-site-association文件
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
+```JSON
+{
+   "webcredentials":{
+      // ${Prefix} Prefix, ${BundleID} Bundle ID ,如果有多个APP依次增加.
+      "apps":["${Prefix}.${BundleID}"],
+      "apps":["${Prefix1}.${BundleID2}"],
+      "apps":["${Prefix2}.${BundleID3}"]
+   }
+}
+```
+===
+  
+* 3、设置 Associated Domains
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
+===
+  
+* 4、设置 Associated Domains
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
+===
+   
+* 5、官方文档
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
 
-https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
+<img src="https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html" width="670" height="370">
 
 <!--
 * Step 1.Add Shell
