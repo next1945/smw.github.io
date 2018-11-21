@@ -31,27 +31,76 @@ SignIn | RPWD | REG
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.13.50.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.00.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.04.png">
 
 ## <a id="Config_Your_App:"></a>Config Your App:
+* [PrefixHeader.pch](AppDemo/AppDemo/PrefixHeader.pch)
 ```shell
+#define POSTURL @"http://103.278.225.222:8080/api"
+#define APPID @"1438587731"
+#define AppStoreURL @"https://itunes.apple.com/cn/app/id1438587731"
+
 // 微信登录
 #define WXAPPID @"wxa1ef79a68ee78dc6"
 #define APPSECRET @"df13989d289c27b9703ec65ef8d519db"
 // QQ登录
-#define QQAPPID @"1106681033"
-#define QQAPPKEY @"PTC8VnALh7zKAqKe"
+#define QQAPPID @"110668133"
+#define QQAPPKEY @"PTC8VnALh7zKqKe"
 // 支付宝支付
-#define AlipayAPPID @"2018061960416551"
+#define AlipayAPPID @"201806196016551"
 // 极光推送
-#define JPUSH_APPKEY @"dbbe5990f07ed34325e34566"
+#define JPUSH_APPKEY @"dbe5990f07ed34325e34566"
 #define JPUSH_CHANNEl @"App Store"
 #define isProdution 1
 // 融云AppKey
-#define RCAPPKEY @"n19jmcy5n8fz9"
+#define RCAPPKEY @"n19jcy5n8fz9"
 // 友盟AppKey
-#define UMAPPKEY @"5ba4af8fb465f5d22d000095"
+#define UMAPPKEY @"5bd4062cf1f556edf600075f"
 ```
 
-## <a id="Auto_Fill_Password:"></a>Auto Fill Password:
-* Auto Fill Password
+## <a id="AutoFill_Password:"></a>AutoFill Password:
+* 1、设置 TextField ContentType
+类目 | UIKit | ContentType | Remark
+------------ | ------------- | ------------- | -------------
+用户名 | TextField | UserName | 
+密码 | TextField | Password | 
+新密码 | TextField | New Password | 
+验证码 | TextField | One Time Code | 
+https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg
+===
+
+* 2、设置 apple-app-site-association
+   > 需要一个支持HTTPS的网站用来存放，apple-app-site-association文件。
+   如果没有可以利用GitHub Pages挂载，步骤如下：
+  2.1、fork我的GitHub Pages
+  https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767161015.jpg
+  2.2、修改成自己的域名
+  https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg
+  2.3、验证
+  
+  
+  2.3、修改apple-app-site-association文件
+  https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg
+  https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg
+  ```JSON
+   {
+      "webcredentials":{
+         // ${Prefix} Prefix, ${BundleID} Bundle ID ,如果有多个APP依次增加.
+         "apps":["${Prefix}.${BundleID}"],
+         "apps":["${Prefix1}.${BundleID2}"],
+         "apps":["${Prefix2}.${BundleID3}"]
+      }
+   }
+  ```
+  ===
+  
+  * 3、设置 Associated Domains
+  https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg
+  ===
+  
+  * 4、设置 Associated Domains
+  https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg
+  ===
+   
+  * 5、官方文档
+  https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg
 
 https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
 
