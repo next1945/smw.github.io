@@ -71,19 +71,17 @@ SignIn | RPWD | REG
    > 需要一个支持HTTPS的网站用来存放，apple-app-site-association文件。
    如果没有可以利用GitHub Pages挂载，步骤如下：
    
-  * 2.1、fork我的GitHub Pages
+  * 2.1、Fork我的GitHub Pages
+   > https://niyongsheng.github.io
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767161015.jpg" width="670" height="370">
   
   * 2.2、修改成自己的域名
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg" width="670" height="370">
   
-  * 2.3、验证
+  * 2.3、验证https://niyongsheng.github.io
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/WX20181121-115649.png" width="670" height="370">
   
-  
-### 3、修改apple-app-site-association文件
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
-
+#### 3、修改apple-app-site-association文件
 ```JSON
 {
    "webcredentials":{
@@ -94,27 +92,32 @@ SignIn | RPWD | REG
    }
 }
 ```
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
   
-### 4、设置 Associated Domains
+#### 4、设置 Associated Domains
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
   
-### 5、设置 Associated Domains
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
-   
-### 6、官方文档
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
-https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
-
-<!--
-* Step 1.Add Shell
-```shell
-
-```
-* Step 2.AppDelegate.m
+#### 6、自动生成密码
 ```objc
+self.nameField.textContentType = UITextContentTypeUsername;
+if (@available(iOS 12.0, *)) {
+    self.passwordField.textContentType = UITextContentTypeNewPassword;
+    self.passwordField.passwordRules = [UITextInputPasswordRules passwordRulesWithDescriptor:@"required: lower; required: upper; allowe: digit; required: [-]; minlength: 6; maxlength: 16;"];
 
+} else {
+    self.passwordField.textContentType = UITextContentTypePassword;
+}
 ```
--->
+* Password Rules Validation Tool: 
+https://developer.apple.com/password-rules/
+
+#### 7、官方文档
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
+https://developer.apple.com/videos/play/wwdc2017/206/
+https://developer.apple.com/documentation/uikit/uitextcontenttype
+
+
 ## Remind
 - [x] ARC
 - [x] iOS >= 10.0
