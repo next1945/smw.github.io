@@ -48,6 +48,7 @@
 		C8EEE2492180544800A2DB1F /* NYSNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE2482180544800A2DB1F /* NYSNewFeatureViewController.m */; };
 		C8EEE24D218054AD00A2DB1F /* NYSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE24B218054AD00A2DB1F /* NYSHomeViewController.m */; };
 		C8EEE24E218054AE00A2DB1F /* NYSHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8EEE24C218054AD00A2DB1F /* NYSHomeViewController.xib */; };
+		C8F50AD821A55E230061C29A /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F50AD721A55E230061C29A /* AuthenticationServices.framework */; };
 		D22C2F885A29AB18892768F8 /* libPods-AppDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A5235D92FE45C1DEDFB6AD /* libPods-AppDemoUITests.a */; };
 		F197CCD7F3CA48F3AAAFE618 /* libPods-AppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */; };
 /* End PBXBuildFile section */
@@ -146,6 +147,7 @@
 		C8EEE24B218054AD00A2DB1F /* NYSHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSHomeViewController.m; sourceTree = "<group>"; };
 		C8EEE24C218054AD00A2DB1F /* NYSHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NYSHomeViewController.xib; sourceTree = "<group>"; };
 		C8EEE250218056B500A2DB1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C8F50AD721A55E230061C29A /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		C9D94907D354ECCEB66FA3DB /* Pods-AppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D7DD5ACFB3294F9542D24CB7 /* Pods-AppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppDemoTests/Pods-AppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F50AD821A55E230061C29A /* AuthenticationServices.framework in Frameworks */,
 				F197CCD7F3CA48F3AAAFE618 /* libPods-AppDemo.a in Frameworks */,
 				C8B991192181C3CA00545181 /* HealthKit.framework in Frameworks */,
 			);
@@ -182,6 +185,7 @@
 		3FB15F5D3E6FB0B125D34D3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8F50AD721A55E230061C29A /* AuthenticationServices.framework */,
 				C8B991182181C3CA00545181 /* HealthKit.framework */,
 				88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */,
 				852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */,
@@ -520,6 +524,9 @@
 					C8EEE1EF2180223A00A2DB1F = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 1;
+							};
 							com.apple.HealthKit = {
 								enabled = 1;
 							};
