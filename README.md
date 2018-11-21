@@ -78,9 +78,9 @@ SignIn | RPWD | REG
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767303721.jpg" width="670" height="370">
   
   * 2.3、验证
+  <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/WX20181121-115649.png" width="670" height="370">
   
-  
-### 3、修改apple-app-site-association文件
+#### 3、修改apple-app-site-association文件
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
 
@@ -95,13 +95,13 @@ SignIn | RPWD | REG
 }
 ```
   
-### 4、设置 Associated Domains
+#### 4、设置 Associated Domains
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
   
-### 5、设置 Associated Domains
+#### 5、设置 Associated Domains
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
    
-### 6、官方文档
+#### 6、官方文档
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
 https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html
 
