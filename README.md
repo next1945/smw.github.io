@@ -82,9 +82,6 @@ SignIn | RPWD | REG
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/WX20181121-115649.png" width="670" height="370">
   
 #### 3、修改apple-app-site-association文件
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
-
 ```JSON
 {
    "webcredentials":{
@@ -95,6 +92,8 @@ SignIn | RPWD | REG
    }
 }
 ```
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542767468091.jpg" width="670" height="370">
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768385014.jpg" width="670" height="370">
   
 #### 4、设置 Associated Domains
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542766863012.jpg" width="670" height="370">
