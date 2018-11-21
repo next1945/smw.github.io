@@ -11,11 +11,12 @@ AppDemo
 ## <a id="How_About_It:"></a>How About It:
 * Framework import：
     * 核心动画 					`CoreAnimation`
-    * 加载进度条					`KVO`
+    * 新特性页 					`NewFeature`
+    * 加载进度条             `KVO`
     * 音效播放 					`AudioToolbox`
-    * 凸起TabBar					`CALayer、UIBezierPath`
+    * 凸起TabBar				 `CALayer、UIBezierPath`
     * 高斯模糊					`UIBlurEffect`
-    * 关于页						`StoreKit`
+    * 关于页					 `StoreKit`
     * 自动填充					`Autofill iOS 12.0`
     * IM+推送+分享+支付+第三方登录	`UMeng+Jpush\AliPay+WeChatPay`
 
@@ -25,6 +26,10 @@ AppDemo
 Screenshot0 | Screenshot1 | Screenshot2 | Screenshot3
 ------------ | ------------- | ------------- | -------------
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.28.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.14.35.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.46.30.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-16%20at%2018.38.34.png"> 
+
+SignIn | RPWD | REG
+------------ | ------------- | -------------
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.20.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.22.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.26.png">
 
 SignIn | RPWD | REG
 ------------ | ------------- | -------------
