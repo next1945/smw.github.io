@@ -23,6 +23,7 @@
 #import <UMShare/UMShare.h>
 #import <UMCommonLog/UMCommonLogManager.h>
 #import <AlipaySDK/AlipaySDK.h>
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate () <JPUSHRegisterDelegate>
 
@@ -34,7 +35,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-   
+    
+    // 初始化IQKeyboardManager
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES; // 控制整个功能是否启用。
+    manager.shouldResignOnTouchOutside = YES; // 控制点击背景是否收起键盘
+    manager.shouldToolbarUsesTextFieldTintColor = YES; // 控制键盘上的工具条文字颜色是否用户自定义
+    manager.enableAutoToolbar = YES; // 控制是否显示键盘上的工具条
+    manager.toolbarManageBehaviour = IQAutoToolbarByTag;
+    
     // 0、友盟分享
     [UMCommonLogManager setUpUMCommonLogManager];
     [UMConfigure setLogEnabled:YES]; // 设置打开日志

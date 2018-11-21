@@ -93,7 +93,9 @@
                             </constraints>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password">
+                                <passwordRules key="passwordRules" passwordRulesDescriptor=" "/>
+                            </textInputTraits>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="848-e2-OJ4">
                             <rect key="frame" x="177" y="116" width="90" height="30"/>
