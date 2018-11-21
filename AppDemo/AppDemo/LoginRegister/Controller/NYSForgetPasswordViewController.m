@@ -10,7 +10,11 @@
 
 @interface NYSForgetPasswordViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *close;
+@property (weak, nonatomic) IBOutlet UIView *getCodeView;
+@property (weak, nonatomic) IBOutlet UIButton *getCodeButton;
+- (IBAction)getCodeButtonClicked:(id)sender;
 - (IBAction)closeBtnClicked:(id)sender;
+- (IBAction)resetButtonClicked:(id)sender;
 
 @end
 
@@ -18,12 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.close.layer.cornerRadius = 15;
+    self.getCodeView.layer.cornerRadius = 7;
+}
+
+- (IBAction)getCodeButtonClicked:(id)sender {
 }
 
 - (IBAction)closeBtnClicked:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)resetButtonClicked:(id)sender {
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
