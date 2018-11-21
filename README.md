@@ -114,7 +114,9 @@ https://developer.apple.com/password-rules/
 
 #### 7、官方文档
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542768418585.jpg" width="670" height="370">
+https://developer.apple.com/videos/play/wwdc2017/206/
 https://developer.apple.com/documentation/uikit/uitextcontenttype
+
 
 ## Remind
 - [x] ARC
