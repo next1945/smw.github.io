@@ -36,7 +36,7 @@ SignIn | RPWD | REG
 <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/IMG_0884.PNG"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/IMG_0879.PNG"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/IMG_0883.PNG">
 
 ## <a id="Config_Your_App:"></a>Config Your App:
-* [PrefixHeader.pch](AppDemo/AppDemo/PrefixHeader.pch)
+> [PrefixHeader.pch](AppDemo/AppDemo/PrefixHeader.pch)
 ```shell
 #define POSTURL @"http://103.278.225.222:8080/api"
 #define APPID @"1438587731"
@@ -70,10 +70,10 @@ SignIn | RPWD | REG
 新密码 | TextField | New Password | no
 验证码 | TextField | One Time Code | no
 
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542769155284.jpg" width="670" height="400">
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/1542848152504.jpg" width="670" height="400">
 
 #### 2、设置 apple-app-site-association
-   > 需要一个支持HTTPS的网站用来存放，apple-app-site-association文件。
+   > 需要一个支持HTTPS的网站在根目录下存放，`apple-app-site-association`文件。
    如果没有可以利用GitHub Pages挂载，步骤如下：
    
   * 2.1、Fork我的GitHub Pages
@@ -87,6 +87,7 @@ SignIn | RPWD | REG
   <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/autofill/WX20181121-115649.png" width="670" height="370">
   
 #### 3、修改apple-app-site-association文件
+> [apple-app-site-association](AppDemo/apple-app-site-association)
 ```JSON
 {
    "webcredentials":{
