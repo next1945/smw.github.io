@@ -130,7 +130,7 @@ https://developer.apple.com/documentation/uikit/uitextcontenttype
 - [x] iPhone \ iPad
 
 ## Contribution
-Reward[:lollipop:](+8618853936112)  Encourage[:heart:](https://github.com/niyongsheng/AppDemo/stargazers)
+Reward[:lollipop:](https://github.com/niyongsheng/niyongsheng.github.io/blob/master/Beg/README.md)  Encourage[:heart:](https://github.com/niyongsheng/AppDemo/stargazers)
 
 ## Contact Me [:octocat:](https://niyongsheng.github.io)
 * E-mail: niyongsheng@Outlook.com
