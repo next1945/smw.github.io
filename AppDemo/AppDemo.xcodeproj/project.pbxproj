@@ -10,6 +10,7 @@
 		986B5652E38CC01D11629CA7 /* libPods-AppDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 852A75DAA24F0A9F81BD65DE /* libPods-AppDemoTests.a */; };
 		C81350F721842D9F00C15626 /* NYSDosign.m in Sources */ = {isa = PBXBuildFile; fileRef = C81350F621842D9F00C15626 /* NYSDosign.m */; };
 		C87DA9FA21A63FE4007FA600 /* NYSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DA9F921A63FE4007FA600 /* NYSTools.m */; };
+		C87DAA0521A6612A007FA600 /* NYSPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87DAA0421A6612A007FA600 /* NYSPagesViewController.m */; };
 		C8B990DC21814FB000545181 /* NYSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B990D921814FAF00545181 /* NYSMeViewController.m */; };
 		C8B990DD21814FB000545181 /* NYSMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990DA21814FAF00545181 /* NYSMeViewController.xib */; };
 		C8B990E4218154AD00545181 /* NYSMeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B990E1218154AD00545181 /* NYSMeTableViewCell.xib */; };
@@ -83,6 +84,8 @@
 		C81350F621842D9F00C15626 /* NYSDosign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSDosign.m; sourceTree = "<group>"; };
 		C87DA9F821A63FE4007FA600 /* NYSTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSTools.h; sourceTree = "<group>"; };
 		C87DA9F921A63FE4007FA600 /* NYSTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSTools.m; sourceTree = "<group>"; };
+		C87DAA0321A6612A007FA600 /* NYSPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSPagesViewController.h; sourceTree = "<group>"; };
+		C87DAA0421A6612A007FA600 /* NYSPagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSPagesViewController.m; sourceTree = "<group>"; };
 		C8B990D921814FAF00545181 /* NYSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYSMeViewController.m; sourceTree = "<group>"; };
 		C8B990DA21814FAF00545181 /* NYSMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYSMeViewController.xib; sourceTree = "<group>"; };
 		C8B990DB21814FAF00545181 /* NYSMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSMeViewController.h; sourceTree = "<group>"; };
@@ -228,6 +231,23 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		C87DA9FB21A65C67007FA600 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C87DA9FC21A65C67007FA600 /* Controller */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		C87DA9FC21A65C67007FA600 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C87DAA0321A6612A007FA600 /* NYSPagesViewController.h */,
+				C87DAA0421A6612A007FA600 /* NYSPagesViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C8B990DE2181542D00545181 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +374,7 @@
 				C8EEE2452180541D00A2DB1F /* NewFeature */,
 				C8EEE2282180224500A2DB1F /* LoginRegister */,
 				C8EEE2442180541D00A2DB1F /* Home */,
+				C87DA9FB21A65C67007FA600 /* Pages */,
 				C8EEE2462180541D00A2DB1F /* Me */,
 				C87DA9F721A63FC8007FA600 /* Tools */,
 				C8EEE250218056B500A2DB1F /* PrefixHeader.pch */,
@@ -752,6 +773,7 @@
 				C8B990E5218154AD00545181 /* NYSMeTableViewCell.m in Sources */,
 				C8B990E9218154BC00545181 /* NYSMeModel.m in Sources */,
 				C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */,
+				C87DAA0521A6612A007FA600 /* NYSPagesViewController.m in Sources */,
 				C8EEE2492180544800A2DB1F /* NYSNewFeatureViewController.m in Sources */,
 				C8EEE23F218050EB00A2DB1F /* NGTextField.m in Sources */,
 				C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */,

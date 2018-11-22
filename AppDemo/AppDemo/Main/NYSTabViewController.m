@@ -8,11 +8,11 @@
 
 #import "NYSTabViewController.h"
 #import "NYSHomeViewController.h"
+#import "NYSPagesViewController.h"
 #import "NYSMeViewController.h"
 #import "NYSLoginViewController.h"
 
 #define StandOutHeight 17
-//static CGFloat tabBarHeight = self.tabBar.frame.size.height;
 
 @interface NYSTabViewController ()
 
@@ -22,7 +22,7 @@
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    
+
     CGRect tabFrame = self.tabBar.frame;
     tabFrame.size.height = 49 + StandOutHeight;
     tabFrame.origin.y = self.view.frame.size.height - (49 + StandOutHeight);
@@ -47,12 +47,9 @@
     navHome.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[[UIImage imageNamed:@"Home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Home_selected"]  imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     // 凸起
-    NYSWebViewController *webVC = [[NYSWebViewController alloc] init];
-    webVC.isHiddenNavigationController = NO;
-    webVC.progressBarColor = [UIColor colorWithRed:0.20 green:0.50 blue:0.92 alpha:1.00];
-    webVC.title = [[NSUserDefaults standardUserDefaults] objectForKey:@"NYSC_SheelURL"];
-    UINavigationController *navPop = [[UINavigationController alloc] initWithRootViewController:webVC];
-    navPop.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Popping" image:[[UIImage imageNamed:@"Popping"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:nil];
+    NYSPagesViewController *pagesVc = [[NYSPagesViewController alloc] init];
+    UINavigationController *navPop = [[UINavigationController alloc] initWithRootViewController:pagesVc];
+    navPop.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"GitHub" image:[[UIImage imageNamed:@"Popping"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Popping"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     // 我的
     UINavigationController *navMe = [[UINavigationController alloc] initWithRootViewController:[[NYSMeViewController alloc] init]];

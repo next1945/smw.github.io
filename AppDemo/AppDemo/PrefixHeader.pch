@@ -12,6 +12,7 @@
 #define POSTURL @"http://103.278.225.222:8080/api"
 #define APPID @"1438587731"
 #define AppStoreURL @"https://itunes.apple.com/cn/app/id1438587731"
+#define GITHUB_URL [NSURL URLWithString:@"https://github.com/niyongsheng"]
 
 // 微信登录
 #define WXAPPID @"wxa1ef79a68ee78dc6"
