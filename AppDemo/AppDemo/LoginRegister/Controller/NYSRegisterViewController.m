@@ -16,6 +16,9 @@
 - (IBAction)getCodeButtonClicked:(id)sender;
 - (IBAction)registerButtonClicked:(id)sender;
 
+@property (nonatomic,assign) NSInteger secondsCountDownInput;
+@property (nonatomic,strong) NSTimer *countDownTimer;
+
 @end
 
 @implementation NYSRegisterViewController
@@ -24,6 +27,10 @@
     [super viewDidLoad];
     self.close.layer.cornerRadius = 15;
     self.getCodeView.layer.cornerRadius = 7;
+    
+    UIScreenEdgePanGestureRecognizer *gobackRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(closeBtnClicked:)];
+    gobackRecognizer.edges = UIRectEdgeLeft;
+    [self.view addGestureRecognizer:gobackRecognizer];
 }
 
 - (IBAction)closeBtnClicked:(id)sender {
@@ -31,13 +38,26 @@
 }
 
 - (IBAction)getCodeButtonClicked:(id)sender {
+    self.getCodeView.backgroundColor = [UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.00];
+    self.getCodeButton.userInteractionEnabled = NO;
+    self.secondsCountDownInput = 60;
+    self.countDownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerTriggerMethon) userInfo:nil repeats:YES];
+}
+
+- (void)timerTriggerMethon {
+    self.secondsCountDownInput --;
+    [NYSTools animateTextChange:1.f withLayer:self.getCodeButton.layer];
+    [self.getCodeButton setTitle:[NSString stringWithFormat:@"Resend %ldS", self.secondsCountDownInput] forState:UIControlStateNormal];
+    if (self.secondsCountDownInput <= 0) {
+        [self.countDownTimer invalidate];
+        [self.getCodeButton setTitle:@"Get Code" forState:UIControlStateNormal];
+        self.getCodeView.backgroundColor = [UIColor colorWithRed:0.04 green:0.46 blue:0.88 alpha:1.00];
+        self.getCodeButton.userInteractionEnabled = YES;
+    }
 }
 
 - (IBAction)registerButtonClicked:(id)sender {
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
+    [NYSTools zoomToShow:sender];
 }
 
 @end

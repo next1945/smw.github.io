@@ -15,7 +15,7 @@
 #import "NYSForgetPasswordViewController.h"
 #import "NYSRegisterViewController.h"
 
-@interface NYSLoginViewController ()
+@interface NYSLoginViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) NYSWeChatUserinfoModel *wechatUserinfo;
 @property (weak, nonatomic) NYSQQUserInfoModel *qqUserinfo;
 
@@ -35,7 +35,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.account.delegate = self;
+    
+    UIScreenEdgePanGestureRecognizer *gobackRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(forgetPassword:)];
+    gobackRecognizer.edges = UIRectEdgeLeft;
+    [self.view addGestureRecognizer:gobackRecognizer];
+    
+    UIScreenEdgePanGestureRecognizer *goforwardRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(regist:)];
+    goforwardRecognizer.edges = UIRectEdgeRight;
+    [self.view addGestureRecognizer:goforwardRecognizer];
 }
 
 - (IBAction)forgetPassword:(id)sender {
@@ -51,6 +60,7 @@
 }
 
 - (IBAction)Login:(id)sender {
+    [NYSTools zoomToShow:sender];
     if ([_account.text isEqualToString:@"niyongsheng"] && [_password.text isEqualToString:@"123456"]) {
         [SVProgressHUD showSuccessWithStatus:@"登陆成功"];
         [SVProgressHUD dismissWithDelay:1.f];
@@ -134,8 +144,14 @@
     }];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
+#pragma mark - UITextField Delegate
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if (textField.text.length >= 11) {
+        [NYSTools shakeAnimationWithLayer:textField.layer];
+        return NO;
+    }
+    return YES;
 }
+
 
 @end

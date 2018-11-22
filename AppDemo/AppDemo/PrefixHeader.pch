@@ -46,6 +46,7 @@
 #import <Masonry.h>
 #import <NYSTK/NYSTK.h>
 #import <NYSMC/NYSMC.h>
+#import "NYSTools.h"
 
 // 2.屏幕尺寸
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width

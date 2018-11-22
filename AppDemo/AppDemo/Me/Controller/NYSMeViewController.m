@@ -167,16 +167,6 @@
     }
 }
 
-// 滚动数字
-- (void)animateTextChange:(CFTimeInterval)duration withLayer:(CALayer *)layer {
-    CATransition *trans = [[CATransition alloc] init];
-    trans.type = kCATransitionMoveIn;
-    trans.subtype = kCATransitionFromTop;
-    trans.duration = duration;
-    trans.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
-    [layer addAnimation:trans forKey:kCATransitionPush];
-}
-
 #pragma mark - UIScrollView
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     WS(weakSelf);
@@ -184,9 +174,9 @@
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //            [self.waveView stop];
             [weakSelf getStepsAndDistance];
-            [weakSelf animateTextChange:1.f withLayer:weakSelf.score.layer];
+            [NYSTools animateTextChange:1.f withLayer:weakSelf.score.layer];
             weakSelf.score.text = [NSString stringWithFormat:@"%ld", weakSelf.scoreCount];
-            [weakSelf animateTextChange:1.f withLayer:weakSelf.signDays.layer];
+            [NYSTools animateTextChange:1.f withLayer:weakSelf.signDays.layer];
             weakSelf.signDays.text = [NSString stringWithFormat:@"%ld", weakSelf.signDayCount];
         });
     }
@@ -207,7 +197,7 @@
                 NSLog(@"距离===%@",pedometerData.distance);
                 dispatch_async(dispatch_get_main_queue(), ^{
                     // 当前步数
-                    [self animateTextChange:1.f withLayer:self.averageStepNum.layer];
+                    [NYSTools animateTextChange:1.f withLayer:self.averageStepNum.layer];
                     self.averageStepNum.text = [NSString stringWithFormat:@"%.02fkm", [pedometerData.distance floatValue] * 0.001];
                 });
             }
@@ -411,6 +401,7 @@
 
 /** 登出 */
 - (IBAction)Logout:(id)sender {
+    [NYSTools zoomToShow:sender];
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"LogoutNotification" object:nil userInfo:nil]];
 }
 
@@ -465,6 +456,8 @@
 }
 
 - (void)alertWithError:(NSError *)error {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     if (!error) {
         [self shareResult:^(NSString *result) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享结果"
@@ -490,6 +483,7 @@
                                               otherButtonTitles:nil];
         [alert show];
     }
+#pragma clang diagnostic pop
 }
 
 /** 获取分享结果 */
