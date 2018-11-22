@@ -29,7 +29,7 @@ Screenshot0 | Screenshot1 | Screenshot2 | Screenshot3
 
 SignIn | RPWD | REG
 ------------ | ------------- | -------------
-<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.20.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.22.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.26.png">
+<img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.20.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.26.png"> | <img src="https://github.com/niyongsheng/AppDemo/blob/master/Screenshot/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202018-11-21%20at%2016.12.22.png">
 
 SignIn | RPWD | REG
 ------------ | ------------- | -------------
@@ -130,7 +130,7 @@ https://developer.apple.com/documentation/uikit/uitextcontenttype
 - [x] iPhone \ iPad
 
 ## Contribution
-Reward[:lollipop:](+8618853936112)  Encourage[:heart:](https://github.com/niyongsheng/AppDemo/stargazers)
+Reward[:lollipop:](https://github.com/niyongsheng/niyongsheng.github.io/blob/master/Beg/README.md)  Encourage[:heart:](https://github.com/niyongsheng/AppDemo/stargazers)
 
 ## Contact Me [:octocat:](https://niyongsheng.github.io)
 * E-mail: niyongsheng@Outlook.com
