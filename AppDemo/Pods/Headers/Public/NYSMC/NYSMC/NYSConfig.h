@@ -1,1 +1,0 @@
-../../../../NYSMC/Frameworks/NYSMC.framework/Headers/NYSConfig.h

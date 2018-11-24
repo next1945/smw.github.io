@@ -12,31 +12,25 @@
 		<key>icon</key>
 		<string>healthIndex</string>
 		<key>title</key>
-		<string>健康指数</string>
+		<string>活动指数</string>
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string>order</string>
+		<string>myRepositories</string>
 		<key>title</key>
-		<string>商城订单</string>
+		<string>我的仓库</string>
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string>house</string>
+		<string>myStart</string>
 		<key>title</key>
-		<string>我的房产</string>
+		<string>我的喜欢</string>
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string>fix</string>
+		<string>myFollow</string>
 		<key>title</key>
-		<string>我的报修</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>Me活动</string>
-		<key>title</key>
-		<string>我的投诉</string>
+		<string>我的关注</string>
 	</dict>
 	<dict>
 		<key>icon</key>

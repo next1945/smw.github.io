@@ -11,7 +11,8 @@
 #import <WXWaveView.h>
 #import "NYSMeModel.h"
 #import "NYSMeTableViewCell.h"
-
+#import "NYSMyWebPageViewController.h"
+#import "HomeViewController.h"
 #import "NYSDosign.h"
 
 #import <UIImageView+WebCache.h>
@@ -86,6 +87,11 @@
 /** 视图已完全过渡到屏幕上 */
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    self.scoreCount = [[userDefault objectForKey:@"scoreCount"] integerValue];
+    self.signDayCount = [[userDefault objectForKey:@"signDayCount"] integerValue];
+    [self updateHeaderMessages];
     
     // 约束状态栏高度偏移量
     _layoutStatusHeight.constant = -getRectStatusHight;
@@ -173,13 +179,17 @@
     if ([self.waveView wave]) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //            [self.waveView stop];
-            [weakSelf getStepsAndDistance];
-            [NYSTools animateTextChange:1.f withLayer:weakSelf.score.layer];
-            weakSelf.score.text = [NSString stringWithFormat:@"%ld", weakSelf.scoreCount];
-            [NYSTools animateTextChange:1.f withLayer:weakSelf.signDays.layer];
-            weakSelf.signDays.text = [NSString stringWithFormat:@"%ld", weakSelf.signDayCount];
+            [weakSelf updateHeaderMessages];
         });
     }
+}
+
+- (void)updateHeaderMessages {
+    [self getStepsAndDistance];
+    [NYSTools animateTextChange:1.f withLayer:self.score.layer];
+    self.score.text = [NSString stringWithFormat:@"%ld", self.scoreCount];
+    [NYSTools animateTextChange:1.f withLayer:self.signDays.layer];
+    self.signDays.text = [NSString stringWithFormat:@"%ld", self.signDayCount];
 }
 
 /** 读取当前步数距离信息 */
@@ -242,7 +252,7 @@
 #pragma mark - UITableView
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 3;
+        return 2;
     } else if (section == 1) {
         return 3;
     } else if (section == 2) {
@@ -268,11 +278,11 @@
     
     // 2.传递模型数据
     if (indexPath.section == 0) {
-        cell.meCellModel = self.modelMArray[indexPath.row + indexPath.section * 3];
+        cell.meCellModel = self.modelMArray[indexPath.row];
     } else if (indexPath.section == 1) {
-        cell.meCellModel = self.modelMArray[indexPath.row + indexPath.section * 3];
+        cell.meCellModel = self.modelMArray[indexPath.row + indexPath.section * 2];
     } else {
-        cell.meCellModel = self.modelMArray[indexPath.row + 6];
+        cell.meCellModel = self.modelMArray[indexPath.row + 5];
     }
     
     return cell;
@@ -335,10 +345,24 @@
     if (indexPath.section == 0) {
         switch (indexPath.row) {
             case 0: {
-                NYSDosign *dosignSucess = [[NYSDosign alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
-                [self.view addSubview:dosignSucess];
-                self.scoreCount += 10;
-                self.signDayCount ++;
+                NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+                if ([userDefault objectForKey:@"signTimeSpec"]) {
+                    if (([[userDefault objectForKey:@"signTimeSpec"] integerValue] + 24*60*60 - [[NSDate date] timeIntervalSince1970]) < 0) {
+                        [self didSign];
+                    } else {
+                        [SVProgressHUD showErrorWithStatus:@"你今天已签到,明天再来吧^^"];
+                        [SVProgressHUD dismissWithDelay:.7f];
+                    }
+                } else {
+                        [self didSign];
+                }
+            }
+                break;
+                
+            case 1: {
+                HomeViewController *chartVc = [[HomeViewController alloc] init];
+                chartVc.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:chartVc animated:YES];
             }
                 break;
                 
@@ -346,6 +370,38 @@
                 break;
         }
     } else if (indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0: {
+                NYSMyWebPageViewController *resVc = [[NYSMyWebPageViewController alloc] init];
+                resVc.hidesBottomBarWhenPushed = YES;
+                resVc.title = @"我的仓库";
+                resVc.url = @"https://github.com/niyongsheng?tab=repositories";
+                [self.navigationController pushViewController:resVc animated:YES];
+            }
+                break;
+                
+            case 1: {
+                NYSMyWebPageViewController *startVc = [[NYSMyWebPageViewController alloc] init];
+                startVc.hidesBottomBarWhenPushed = YES;
+                startVc.title = @"我的喜欢";
+                startVc.url = @"https://github.com/niyongsheng?tab=stars";
+                [self.navigationController pushViewController:startVc animated:YES];
+            }
+                break;
+
+                
+            case 2: {
+                NYSMyWebPageViewController *followVc = [[NYSMyWebPageViewController alloc] init];
+                followVc.hidesBottomBarWhenPushed = YES;
+                followVc.title = @"我的关注";
+                followVc.url = @"https://github.com/niyongsheng?tab=following";
+                [self.navigationController pushViewController:followVc animated:YES];
+            }
+                break;
+
+            default:
+                break;
+        }
         
     } else {
         switch (indexPath.row) {
@@ -393,6 +449,17 @@
     }
 }
 
+- (void)didSign {
+    NYSDosign *dosignSucess = [[NYSDosign alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+    [self.view addSubview:dosignSucess];
+    self.scoreCount += 10;
+    self.signDayCount += 1;
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setObject:[NSString stringWithFormat:@"%ld", self.scoreCount] forKey:@"scoreCount"];
+    [userDefault setObject:[NSString stringWithFormat:@"%ld", self.signDayCount] forKey:@"signDayCount"];
+    [userDefault setObject:[NSString stringWithFormat:@"%f", [[NSDate date] timeIntervalSince1970]] forKey:@"signTimeSpec"];
+    [userDefault synchronize];
+}
 
 #pragma mark - 个人信息设置
 - (IBAction)iconButtonClicked:(id)sender {
@@ -401,8 +468,20 @@
 
 /** 登出 */
 - (IBAction)Logout:(id)sender {
-    [NYSTools zoomToShow:sender];
-    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"LogoutNotification" object:nil userInfo:nil]];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"你确定要退出当先登录吗？" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:@"退出登录" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        [NYSTools zoomToShow:sender];
+        [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"LogoutNotification" object:nil userInfo:nil]];
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"Cancel Action");
+    }];
+    
+    [alertController addAction:logoutAction];
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 #pragma mark - UINavigationControllerDelegate

@@ -127,7 +127,9 @@ form.submit();\
 }
 
 - (void)rightBarButton {
-    [self.webView reload];
+    NSURLRequest *request = [NSURLRequest requestWithURL:GITHUB_URL cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:5.0];
+    [self.webView loadRequest:request];
+//    [self.webView reload];
 }
 
 - (void)leftBarButton {

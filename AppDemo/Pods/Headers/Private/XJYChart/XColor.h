@@ -1,0 +1,1 @@
+../../../XJYChart/XJYChart/Color/XColor.h

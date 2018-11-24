@@ -32,6 +32,18 @@
 		C8C0D5CE21806A9000A1B7F3 /* NYSTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C0D5CB21806A9000A1B7F3 /* NYSTabViewController.xib */; };
 		C8C0D5CF21806A9000A1B7F3 /* NYSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0D5CC21806A9000A1B7F3 /* NYSTabViewController.m */; };
 		C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C0D5D121806B4800A1B7F3 /* NYSTextField.m */; };
+		C8D3ECC821A8ED940021E7B5 /* NYSMyWebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECC721A8ED940021E7B5 /* NYSMyWebPageViewController.m */; };
+		C8D3ED0721A8F9D30021E7B5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECF321A8F9D30021E7B5 /* HomeViewController.m */; };
+		C8D3ED0821A8F9D30021E7B5 /* BarChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECF521A8F9D30021E7B5 /* BarChartCell.m */; };
+		C8D3ED0921A8F9D30021E7B5 /* SingleLineChartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECF621A8F9D30021E7B5 /* SingleLineChartTableViewCell.m */; };
+		C8D3ED0A21A8F9D30021E7B5 /* XJYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECF921A8F9D30021E7B5 /* XJYTableViewCell.m */; };
+		C8D3ED0B21A8F9D30021E7B5 /* PieChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECFA21A8F9D30021E7B5 /* PieChartCell.m */; };
+		C8D3ED0C21A8F9D30021E7B5 /* AreaLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECFB21A8F9D30021E7B5 /* AreaLineTableViewCell.m */; };
+		C8D3ED0D21A8F9D30021E7B5 /* LineChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECFC21A8F9D30021E7B5 /* LineChartCell.m */; };
+		C8D3ED0E21A8F9D30021E7B5 /* PositiveNegativeBarChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ECFD21A8F9D30021E7B5 /* PositiveNegativeBarChartCell.m */; };
+		C8D3ED0F21A8F9D30021E7B5 /* XJYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ED0021A8F9D30021E7B5 /* XJYViewController.m */; };
+		C8D3ED1221A8F9D30021E7B5 /* StackAreaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D3ED0621A8F9D30021E7B5 /* StackAreaTableViewCell.m */; };
+		C8D3ED1421A92C8B0021E7B5 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D3ED1321A92C8B0021E7B5 /* NetworkExtension.framework */; };
 		C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1F42180223A00A2DB1F /* AppDelegate.m */; };
 		C8EEE1F82180223A00A2DB1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1F72180223A00A2DB1F /* ViewController.m */; };
 		C8EEE1FE2180223A00A2DB1F /* AppDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8EEE1FC2180223A00A2DB1F /* AppDemo.xcdatamodeld */; };
@@ -120,6 +132,29 @@
 		C8C0D5CD21806A9000A1B7F3 /* NYSTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYSTabViewController.h; sourceTree = "<group>"; };
 		C8C0D5D021806B4800A1B7F3 /* NYSTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSTextField.h; sourceTree = "<group>"; };
 		C8C0D5D121806B4800A1B7F3 /* NYSTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSTextField.m; sourceTree = "<group>"; };
+		C8D3ECC621A8ED940021E7B5 /* NYSMyWebPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYSMyWebPageViewController.h; sourceTree = "<group>"; };
+		C8D3ECC721A8ED940021E7B5 /* NYSMyWebPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYSMyWebPageViewController.m; sourceTree = "<group>"; };
+		C8D3ECF021A8F9D30021E7B5 /* PositiveNegativeBarChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositiveNegativeBarChartCell.h; sourceTree = "<group>"; };
+		C8D3ECF121A8F9D30021E7B5 /* LineChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartCell.h; sourceTree = "<group>"; };
+		C8D3ECF221A8F9D30021E7B5 /* AreaLineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaLineTableViewCell.h; sourceTree = "<group>"; };
+		C8D3ECF321A8F9D30021E7B5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C8D3ECF421A8F9D30021E7B5 /* XJYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJYViewController.h; sourceTree = "<group>"; };
+		C8D3ECF521A8F9D30021E7B5 /* BarChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartCell.m; sourceTree = "<group>"; };
+		C8D3ECF621A8F9D30021E7B5 /* SingleLineChartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleLineChartTableViewCell.m; sourceTree = "<group>"; };
+		C8D3ECF821A8F9D30021E7B5 /* StackAreaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackAreaTableViewCell.h; sourceTree = "<group>"; };
+		C8D3ECF921A8F9D30021E7B5 /* XJYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJYTableViewCell.m; sourceTree = "<group>"; };
+		C8D3ECFA21A8F9D30021E7B5 /* PieChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartCell.m; sourceTree = "<group>"; };
+		C8D3ECFB21A8F9D30021E7B5 /* AreaLineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaLineTableViewCell.m; sourceTree = "<group>"; };
+		C8D3ECFC21A8F9D30021E7B5 /* LineChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartCell.m; sourceTree = "<group>"; };
+		C8D3ECFD21A8F9D30021E7B5 /* PositiveNegativeBarChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositiveNegativeBarChartCell.m; sourceTree = "<group>"; };
+		C8D3ECFE21A8F9D30021E7B5 /* SingleLineChartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleLineChartTableViewCell.h; sourceTree = "<group>"; };
+		C8D3ECFF21A8F9D30021E7B5 /* BarChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChartCell.h; sourceTree = "<group>"; };
+		C8D3ED0021A8F9D30021E7B5 /* XJYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJYViewController.m; sourceTree = "<group>"; };
+		C8D3ED0121A8F9D30021E7B5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C8D3ED0421A8F9D30021E7B5 /* PieChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartCell.h; sourceTree = "<group>"; };
+		C8D3ED0521A8F9D30021E7B5 /* XJYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJYTableViewCell.h; sourceTree = "<group>"; };
+		C8D3ED0621A8F9D30021E7B5 /* StackAreaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackAreaTableViewCell.m; sourceTree = "<group>"; };
+		C8D3ED1321A92C8B0021E7B5 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		C8EEE1F02180223A00A2DB1F /* AppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EEE1F32180223A00A2DB1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8EEE1F42180223A00A2DB1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -164,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8F50AD821A55E230061C29A /* AuthenticationServices.framework in Frameworks */,
+				C8D3ED1421A92C8B0021E7B5 /* NetworkExtension.framework in Frameworks */,
 				F197CCD7F3CA48F3AAAFE618 /* libPods-AppDemo.a in Frameworks */,
 				C8B991192181C3CA00545181 /* HealthKit.framework in Frameworks */,
 			);
@@ -191,6 +227,7 @@
 		3FB15F5D3E6FB0B125D34D3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8D3ED1321A92C8B0021E7B5 /* NetworkExtension.framework */,
 				C8F50AD721A55E230061C29A /* AuthenticationServices.framework */,
 				C8B991182181C3CA00545181 /* HealthKit.framework */,
 				88DF1F6ABCA36EDD27C32BAD /* libPods-AppDemo.a */,
@@ -337,6 +374,43 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C8D3ECC521A8ED660021E7B5 /* webPage */ = {
+			isa = PBXGroup;
+			children = (
+				C8D3ECC621A8ED940021E7B5 /* NYSMyWebPageViewController.h */,
+				C8D3ECC721A8ED940021E7B5 /* NYSMyWebPageViewController.m */,
+			);
+			path = webPage;
+			sourceTree = "<group>";
+		};
+		C8D3ECEF21A8F9D30021E7B5 /* 活动指数 */ = {
+			isa = PBXGroup;
+			children = (
+				C8D3ED0121A8F9D30021E7B5 /* HomeViewController.h */,
+				C8D3ECF321A8F9D30021E7B5 /* HomeViewController.m */,
+				C8D3ECF021A8F9D30021E7B5 /* PositiveNegativeBarChartCell.h */,
+				C8D3ECFD21A8F9D30021E7B5 /* PositiveNegativeBarChartCell.m */,
+				C8D3ECF121A8F9D30021E7B5 /* LineChartCell.h */,
+				C8D3ECFC21A8F9D30021E7B5 /* LineChartCell.m */,
+				C8D3ECF221A8F9D30021E7B5 /* AreaLineTableViewCell.h */,
+				C8D3ECFB21A8F9D30021E7B5 /* AreaLineTableViewCell.m */,
+				C8D3ECF421A8F9D30021E7B5 /* XJYViewController.h */,
+				C8D3ECF921A8F9D30021E7B5 /* XJYTableViewCell.m */,
+				C8D3ECFF21A8F9D30021E7B5 /* BarChartCell.h */,
+				C8D3ECF521A8F9D30021E7B5 /* BarChartCell.m */,
+				C8D3ECFE21A8F9D30021E7B5 /* SingleLineChartTableViewCell.h */,
+				C8D3ECF621A8F9D30021E7B5 /* SingleLineChartTableViewCell.m */,
+				C8D3ECF821A8F9D30021E7B5 /* StackAreaTableViewCell.h */,
+				C8D3ED0621A8F9D30021E7B5 /* StackAreaTableViewCell.m */,
+				C8D3ED0421A8F9D30021E7B5 /* PieChartCell.h */,
+				C8D3ECFA21A8F9D30021E7B5 /* PieChartCell.m */,
+				C8D3ED0521A8F9D30021E7B5 /* XJYTableViewCell.h */,
+				C8D3ED0021A8F9D30021E7B5 /* XJYViewController.m */,
+			);
+			name = "活动指数";
+			path = "../../../../../../../Users/nigang/Downloads/XJYChart-master/XJYChartDemo/XJYChartDemo/活动指数";
+			sourceTree = "<group>";
+		};
 		C8D75D8F21832D0E00E46C31 /* NewFeatureImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,7 +529,9 @@
 				C8B990DE2181542D00545181 /* Controller */,
 				C8B990E02181544F00545181 /* View */,
 				C8B990DF2181544700545181 /* Model */,
+				C8D3ECC521A8ED660021E7B5 /* webPage */,
 				C81350F421842D6500C15626 /* 签到 */,
+				C8D3ECEF21A8F9D30021E7B5 /* 活动指数 */,
 				C8B990FA21817EEA00545181 /* 关于 */,
 			);
 			path = Me;
@@ -565,9 +641,12 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
 								enabled = 1;
 							};
 						};
@@ -704,7 +783,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-AppDemo/Pods-AppDemo-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/NYSMC/Resources/images.bundle",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
@@ -727,7 +805,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/images.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
@@ -759,27 +836,38 @@
 				C87DA9FA21A63FE4007FA600 /* NYSTools.m in Sources */,
 				C8EEE22C218024A200A2DB1F /* NYSLoginViewController.m in Sources */,
 				C8B991142181BF5D00545181 /* NYSQQUserInfoModel.m in Sources */,
+				C8D3ED0F21A8F9D30021E7B5 /* XJYViewController.m in Sources */,
 				C8EEE1F82180223A00A2DB1F /* ViewController.m in Sources */,
 				C8EEE1FE2180223A00A2DB1F /* AppDemo.xcdatamodeld in Sources */,
 				C8B990F92181748900545181 /* NYSChatDataSource.m in Sources */,
 				C8B991042181828000545181 /* NYSUserProtoclViewController.m in Sources */,
 				C8EEE2062180223B00A2DB1F /* main.m in Sources */,
+				C8D3ED0821A8F9D30021E7B5 /* BarChartCell.m in Sources */,
 				C8B991112181BF4A00545181 /* NYSWeChatUserinfoModel.m in Sources */,
 				C8EEE24D218054AD00A2DB1F /* NYSHomeViewController.m in Sources */,
+				C8D3ED1221A8F9D30021E7B5 /* StackAreaTableViewCell.m in Sources */,
 				C8B990FE2181812800545181 /* NYSAboutViewController.m in Sources */,
+				C8D3ECC821A8ED940021E7B5 /* NYSMyWebPageViewController.m in Sources */,
 				C8EEE23721804A7800A2DB1F /* NYSForgetPasswordViewController.m in Sources */,
 				C8C0D5CF21806A9000A1B7F3 /* NYSTabViewController.m in Sources */,
 				C8EEE23221804A5B00A2DB1F /* NYSRegisterViewController.m in Sources */,
 				C8B990E5218154AD00545181 /* NYSMeTableViewCell.m in Sources */,
 				C8B990E9218154BC00545181 /* NYSMeModel.m in Sources */,
 				C8C0D5D221806B4800A1B7F3 /* NYSTextField.m in Sources */,
+				C8D3ED0B21A8F9D30021E7B5 /* PieChartCell.m in Sources */,
 				C87DAA0521A6612A007FA600 /* NYSPagesViewController.m in Sources */,
 				C8EEE2492180544800A2DB1F /* NYSNewFeatureViewController.m in Sources */,
+				C8D3ED0C21A8F9D30021E7B5 /* AreaLineTableViewCell.m in Sources */,
 				C8EEE23F218050EB00A2DB1F /* NGTextField.m in Sources */,
 				C8EEE1F52180223A00A2DB1F /* AppDelegate.m in Sources */,
+				C8D3ED0A21A8F9D30021E7B5 /* XJYTableViewCell.m in Sources */,
+				C8D3ED0D21A8F9D30021E7B5 /* LineChartCell.m in Sources */,
 				C81350F721842D9F00C15626 /* NYSDosign.m in Sources */,
+				C8D3ED0721A8F9D30021E7B5 /* HomeViewController.m in Sources */,
 				C8B990EE21815FAF00545181 /* NYSConversationViewController.m in Sources */,
 				C8B990F42181733A00545181 /* QMHCommitView.m in Sources */,
+				C8D3ED0921A8F9D30021E7B5 /* SingleLineChartTableViewCell.m in Sources */,
+				C8D3ED0E21A8F9D30021E7B5 /* PositiveNegativeBarChartCell.m in Sources */,
 				C8B990DC21814FB000545181 /* NYSMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

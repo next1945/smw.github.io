@@ -1,0 +1,1 @@
+../../../XJYChart/XJYChart/Category/UIGestureRecognizer+XGesHelper.h

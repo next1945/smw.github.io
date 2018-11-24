@@ -1,0 +1,1 @@
+../../../XJYChart/XJYChart/Configuration/LineChartConfiguration/XStackAreaLineChartConfiguration.h

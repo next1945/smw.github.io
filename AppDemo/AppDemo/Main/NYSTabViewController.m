@@ -49,7 +49,7 @@
     // 凸起
     NYSPagesViewController *pagesVc = [[NYSPagesViewController alloc] init];
     UINavigationController *navPop = [[UINavigationController alloc] initWithRootViewController:pagesVc];
-    navPop.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"GitHub" image:[[UIImage imageNamed:@"Popping"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"Popping"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    navPop.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"GitHub" image:[[UIImage imageNamed:@"github"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"githubHilight"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     // 我的
     UINavigationController *navMe = [[UINavigationController alloc] initWithRootViewController:[[NYSMeViewController alloc] init]];

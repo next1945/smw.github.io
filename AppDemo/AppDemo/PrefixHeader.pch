@@ -27,7 +27,7 @@
 #define JPUSH_CHANNEl @"App Store"
 #define isProdution 1
 // 融云AppKey
-#define RCAPPKEY @"n19jcy5n8fz9"
+#define RCAPPKEY @"kj7swf8ok1wu2"
 // 友盟AppKey
 #define UMAPPKEY @"5bd4062cf1f556edf600075f"
 
@@ -46,7 +46,7 @@
 #import <SVProgressHUD.h>
 #import <Masonry.h>
 #import <NYSTK/NYSTK.h>
-#import <NYSMC/NYSMC.h>
+#import <XJYChart.h>
 #import "NYSTools.h"
 
 // 2.屏幕尺寸

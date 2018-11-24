@@ -56,11 +56,11 @@
     [[RCIM sharedRCIM] initWithAppKey:RCAPPKEY];
     // 2、连接融云服务器
     NSUserDefaults * userdefaults = [NSUserDefaults standardUserDefaults];
-    [[RCIM sharedRCIM] connectWithToken:[userdefaults objectForKey:@"rongyunToken"] success:^(NSString *userId) {
+    [[RCIM sharedRCIM] connectWithToken:@"s/g0PGpqcMwDBkm68HzTHo3C1sQzmrU2HbKZrDGUtdvC0y6A2EydphJl5q9JmtLax8EsG9s9Spf6paTLTN4BMEu+32dNciaB" success:^(NSString *userId) {
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
         RCUserInfo *currentUserInfo = [[RCUserInfo alloc] init];
-        currentUserInfo.name = [userdefaults objectForKey:@"nickName"];
-        currentUserInfo.portraitUri = [userdefaults objectForKey:@"imgAddress"];
+        currentUserInfo.name = @"niyongsheng";
+        currentUserInfo.portraitUri = @"https://avatars0.githubusercontent.com/u/28373699?s=460&v=4";
         currentUserInfo.userId = [userdefaults objectForKey:@"account"];
         
         // 2.1.设置当前登录的用户的用户信息

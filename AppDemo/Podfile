@@ -14,8 +14,9 @@ target 'AppDemo' do
   pod 'WXWaveView', '~> 1.0'
   pod 'IQKeyboardManager'
   pod 'KMNavigationBarTransition'
+  pod 'XJYChart'
   pod 'NYSTK', '~> 0.0.4'
-  pod 'NYSMC', '~> 0.2.1'
+
   
   pod 'JPush'
   pod 'RongCloudIM'

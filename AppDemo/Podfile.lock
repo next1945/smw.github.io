@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Colours (5.13.0):
+    - Colours/ObjC (= 5.13.0)
+  - Colours/ObjC (5.13.0)
   - IQKeyboardManager (6.2.0)
   - JCore (1.2.5)
   - JPush (3.1.0):
@@ -22,8 +25,6 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.15.7)
-  - NYSMC (0.2.1):
-    - AFNetworking
   - NYSTK (0.0.4)
   - RongCloudIM (2.9.7):
     - RongCloudIM/IMKit (= 2.9.7)
@@ -58,6 +59,8 @@ PODS:
     - UMCCommon
     - UMCShare/Core
   - WXWaveView (1.0.1)
+  - XJYChart (2.3.5):
+    - Colours (= 5.13.0)
   - XLForm (3.2.0)
 
 DEPENDENCIES:
@@ -68,7 +71,6 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
-  - NYSMC (~> 0.2.1)
   - NYSTK (~> 0.0.4)
   - RongCloudIM
   - SDWebImage
@@ -79,11 +81,13 @@ DEPENDENCIES:
   - UMCShare/Social/ReducedWeChat
   - UMCShare/UI
   - WXWaveView (~> 1.0)
+  - XJYChart
   - XLForm (~> 3.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Colours
     - IQKeyboardManager
     - JCore
     - JPush
@@ -91,7 +95,6 @@ SPEC REPOS:
     - Masonry
     - MJExtension
     - MJRefresh
-    - NYSMC
     - NYSTK
     - RongCloudIM
     - SDWebImage
@@ -100,10 +103,12 @@ SPEC REPOS:
     - UMCCommonLog
     - UMCShare
     - WXWaveView
+    - XJYChart
     - XLForm
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   JCore: 14706de2640b25fb77dbd02332696491407f37c9
   JPush: 5921e25ad13e0386351079217b009f2039084eac
@@ -111,7 +116,6 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  NYSMC: 5ec49a7712fa7b3cc57883bfacc79322d03b9122
   NYSTK: ef5aef4dd1177cca2419e06f040abe9d452e00f4
   RongCloudIM: 0a039a658fe5e40f62d8f2a14c3df3629c12526a
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
@@ -120,8 +124,9 @@ SPEC CHECKSUMS:
   UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
   UMCShare: aa233aecad67979930fe43f3a2f676023b669439
   WXWaveView: f8424284812536a3842bc5dd9afb943e53e911a8
+  XJYChart: 38f7412be14cfdcc95f7b4b78aaa3fb96dc28a61
   XLForm: 2250b4e96ab8ffa5f3355838c79edd90de451782
 
-PODFILE CHECKSUM: cfc7abb711bac3cdcbaf7ea3fd8351280adc4e5f
+PODFILE CHECKSUM: 9dce76af011626b7f4b0298d752c3f36363f89e2
 
 COCOAPODS: 1.5.2

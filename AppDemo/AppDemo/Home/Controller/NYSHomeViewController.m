@@ -74,7 +74,29 @@
 }
 
 - (void)add {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"创建会话" message:nil preferredStyle:UIAlertControllerStyleAlert];
+
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"Please enter user account";
+    }];
+
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"Cancel Action");
+    }];
+    UIAlertAction *createAction = [UIAlertAction actionWithTitle:@"会话" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [SVProgressHUD show];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"未查询到%@的用户信息\n无法创建会话", alertController.textFields.firstObject.text]];
+            [SVProgressHUD dismissWithDelay:0.8f];
+        });
+
+    }];
     
+    [alertController addAction:cancelAction];
+    [alertController addAction:createAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
