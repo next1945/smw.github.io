@@ -342,111 +342,116 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES]; // 取消选中
-    if (indexPath.section == 0) {
-        switch (indexPath.row) {
-            case 0: {
-                NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-                if ([userDefault objectForKey:@"signTimeSpec"]) {
-                    if (([[userDefault objectForKey:@"signTimeSpec"] integerValue] + 24*60*60 - [[NSDate date] timeIntervalSince1970]) < 0) {
-                        [self didSign];
+    // cell动画
+    [UIView transitionWithView:[tableView cellForRowAtIndexPath:indexPath] duration:0.7 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:[tableView cellForRowAtIndexPath:indexPath] cache:YES];
+    } completion:^(BOOL finished) {
+        if (indexPath.section == 0) {
+            switch (indexPath.row) {
+                case 0: {
+                    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+                    if ([userDefault objectForKey:@"signTimeSpec"]) {
+                        if (([[userDefault objectForKey:@"signTimeSpec"] integerValue] + 24*60*60 - [[NSDate date] timeIntervalSince1970]) < 0) {
+                            [self didSign];
+                        } else {
+                            [SVProgressHUD showErrorWithStatus:@"你今天已签到,明天再来吧^^"];
+                            [SVProgressHUD dismissWithDelay:.7f];
+                        }
                     } else {
-                        [SVProgressHUD showErrorWithStatus:@"你今天已签到,明天再来吧^^"];
-                        [SVProgressHUD dismissWithDelay:.7f];
-                    }
-                } else {
                         [self didSign];
-                }
-            }
-                break;
-                
-            case 1: {
-                HomeViewController *chartVc = [[HomeViewController alloc] init];
-                chartVc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:chartVc animated:YES];
-            }
-                break;
-                
-            default:
-                break;
-        }
-    } else if (indexPath.section == 1) {
-        switch (indexPath.row) {
-            case 0: {
-                NYSMyWebPageViewController *resVc = [[NYSMyWebPageViewController alloc] init];
-                resVc.hidesBottomBarWhenPushed = YES;
-                resVc.title = @"我的仓库";
-                resVc.url = @"https://github.com/niyongsheng?tab=repositories";
-                [self.navigationController pushViewController:resVc animated:YES];
-            }
-                break;
-                
-            case 1: {
-                NYSMyWebPageViewController *startVc = [[NYSMyWebPageViewController alloc] init];
-                startVc.hidesBottomBarWhenPushed = YES;
-                startVc.title = @"我的喜欢";
-                startVc.url = @"https://github.com/niyongsheng?tab=stars";
-                [self.navigationController pushViewController:startVc animated:YES];
-            }
-                break;
-
-                
-            case 2: {
-                NYSMyWebPageViewController *followVc = [[NYSMyWebPageViewController alloc] init];
-                followVc.hidesBottomBarWhenPushed = YES;
-                followVc.title = @"我的关注";
-                followVc.url = @"https://github.com/niyongsheng?tab=following";
-                [self.navigationController pushViewController:followVc animated:YES];
-            }
-                break;
-
-            default:
-                break;
-        }
-        
-    } else {
-        switch (indexPath.row) {
-            case 0: {
-                [UMSocialUIManager removeAllCustomPlatformWithoutFilted];
-                [UMSocialShareUIConfig shareInstance].sharePageGroupViewConfig.sharePageGroupViewPostionType = UMSocialSharePageGroupViewPositionType_Bottom;
-                [UMSocialShareUIConfig shareInstance].sharePageScrollViewConfig.shareScrollViewPageItemStyleType = UMSocialPlatformItemViewBackgroudType_IconAndBGRadius;
-                WS(weakSelf);
-                [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo) {
-                    // 根据获取的platformType确定所选平台进行下一步操作
-                    switch (platformType) {
-                        case UMSocialPlatformType_WechatSession:
-                            [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
-                            break;
-                        case UMSocialPlatformType_WechatTimeLine:
-                            [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_WechatTimeLine];
-                            break;
-                        case UMSocialPlatformType_WechatFavorite:
-                            [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_WechatFavorite];
-                            break;
-                        case UMSocialPlatformType_QQ:
-                            [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_QQ];
-                            break;
-                        case UMSocialPlatformType_Qzone:
-                            [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_Qzone];
-                            break;
-                            
-                        default:
-                            break;
                     }
-                }];
+                }
+                    break;
+                    
+                case 1: {
+                    HomeViewController *chartVc = [[HomeViewController alloc] init];
+                    chartVc.hidesBottomBarWhenPushed = YES;
+                    [self.navigationController pushViewController:chartVc animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
             }
-                break;
-            case 1: {
-                NYSAboutViewController *aboutVC = [[NYSAboutViewController alloc] init];
-                aboutVC.hidesBottomBarWhenPushed = YES;
-                aboutVC.title = @"关于";
-                [self.navigationController pushViewController:aboutVC animated:YES];
+        } else if (indexPath.section == 1) {
+            switch (indexPath.row) {
+                case 0: {
+                    NYSMyWebPageViewController *resVc = [[NYSMyWebPageViewController alloc] init];
+                    resVc.hidesBottomBarWhenPushed = YES;
+                    resVc.title = @"我的仓库";
+                    resVc.url = @"https://github.com/niyongsheng?tab=repositories";
+                    [self.navigationController pushViewController:resVc animated:YES];
+                }
+                    break;
+                    
+                case 1: {
+                    NYSMyWebPageViewController *startVc = [[NYSMyWebPageViewController alloc] init];
+                    startVc.hidesBottomBarWhenPushed = YES;
+                    startVc.title = @"我的喜欢";
+                    startVc.url = @"https://github.com/niyongsheng?tab=stars";
+                    [self.navigationController pushViewController:startVc animated:YES];
+                }
+                    break;
+                    
+                    
+                case 2: {
+                    NYSMyWebPageViewController *followVc = [[NYSMyWebPageViewController alloc] init];
+                    followVc.hidesBottomBarWhenPushed = YES;
+                    followVc.title = @"我的关注";
+                    followVc.url = @"https://github.com/niyongsheng?tab=following";
+                    [self.navigationController pushViewController:followVc animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
             }
-                break;
-                
-            default:
-                break;
+            
+        } else {
+            switch (indexPath.row) {
+                case 0: {
+                    [UMSocialUIManager removeAllCustomPlatformWithoutFilted];
+                    [UMSocialShareUIConfig shareInstance].sharePageGroupViewConfig.sharePageGroupViewPostionType = UMSocialSharePageGroupViewPositionType_Bottom;
+                    [UMSocialShareUIConfig shareInstance].sharePageScrollViewConfig.shareScrollViewPageItemStyleType = UMSocialPlatformItemViewBackgroudType_IconAndBGRadius;
+                    WS(weakSelf);
+                    [UMSocialUIManager showShareMenuViewInWindowWithPlatformSelectionBlock:^(UMSocialPlatformType platformType, NSDictionary *userInfo) {
+                        // 根据获取的platformType确定所选平台进行下一步操作
+                        switch (platformType) {
+                            case UMSocialPlatformType_WechatSession:
+                                [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_WechatSession];
+                                break;
+                            case UMSocialPlatformType_WechatTimeLine:
+                                [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_WechatTimeLine];
+                                break;
+                            case UMSocialPlatformType_WechatFavorite:
+                                [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_WechatFavorite];
+                                break;
+                            case UMSocialPlatformType_QQ:
+                                [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_QQ];
+                                break;
+                            case UMSocialPlatformType_Qzone:
+                                [weakSelf shareWebPageToPlatformType:UMSocialPlatformType_Qzone];
+                                break;
+                                
+                            default:
+                                break;
+                        }
+                    }];
+                }
+                    break;
+                case 1: {
+                    NYSAboutViewController *aboutVC = [[NYSAboutViewController alloc] init];
+                    aboutVC.hidesBottomBarWhenPushed = YES;
+                    aboutVC.title = @"关于";
+                    [self.navigationController pushViewController:aboutVC animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
         }
-    }
+    }];
 }
 
 - (void)didSign {
